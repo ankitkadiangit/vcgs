@@ -1,0 +1,141 @@
+$red: (
+  "base": #ff0404,
+);
+
+$blue: (
+  "base": #00538b,
+  "lighten": #0369a1,
+  "lighten-2": #00aeef,
+);
+
+$green: (
+  "base": #15803d,
+  "lighten": #40ae49,
+);
+
+$purple: (
+  "base": #52309a,
+);
+
+$orange: (
+  "base": #ff7a00,
+);
+
+$grey: (
+  "lighten-1": #21262c,
+  "lighten-2": #333b43,
+  "lighten-3": #626f7b,
+  "lighten-4": #9aa7b7,
+  "lighten-5": #d0dbe8,
+  "lighten-6": #eeeff0,
+  "lighten-7": #f7f7f7,
+);
+
+$shades: (
+  "black": #000000,
+  "white": #ffffff,
+  "transparent": transparent,
+);
+
+$colors: (
+  "red": $red,
+  "blue": $blue,
+  "green": $green,
+  "purple": $purple,
+  "orange": $orange,
+  "grey": $grey,
+  "shades": $shades,
+) !default;
+
+// Color Classes
+
+// @each $color_name, $color in $colors {
+//   @each $color_type, $color_value in $color {
+//     @if $color_type == "base" {
+//       .#{$color_name} {
+//         background-color: $color_value !important;
+//       }
+//       .#{$color_name}-text {
+//         color: $color_value !important;
+//       }
+//     }
+//     @else if $color_name != "shades" {
+//       .#{$color_name}.#{$color_type} {
+//         background-color: $color_value !important;
+//       }
+//       .#{$color_name}-text.text-#{$color_type} {
+//         color: $color_value !important;
+//       }
+//     }
+//   }
+// }
+
+// Shade classes
+// @each $color, $color_value in $shades {
+//   .#{$color} {
+//     background-color: $color_value !important;
+//   }
+//   .#{$color}-text {
+//     color: $color_value !important;
+//   }
+// }
+
+// usage: color("name_of_color", "type_of_color")
+// to avoid to repeating map-get($colors, ...)
+
+@function color($color, $type) {
+  @if map-has-key($colors, $color) {
+    $curr_color: map-get($colors, $color);
+    @if map-has-key($curr_color, $type) {
+      @return map-get($curr_color, $type);
+    }
+  }
+  @return null;
+}
+
+.blue {
+  &.base-text {
+    color: color("blue", "base");
+  }
+  &.base-bg {
+    background-color: color("blue", "base");
+  }
+  &.lighten-text {
+    color: color("blue", "lighten");
+  }
+  &.lighten-bg {
+    background-color: color("blue", "lighten");
+  }
+}
+.green {
+  &.base-text {
+    color: color("green", "base");
+  }
+  &.base-bg {
+    background-color: color("green", "base");
+  }
+}
+.purple {
+  &.base-text {
+    color: color("purple", "base");
+  }
+  &.base-bg {
+    background-color: color("purple", "base");
+  }
+}
+
+.text-light {
+  color: color("grey", "lighten-3");
+}
+
+.red-color {
+  .base {
+    background-color: color("red", "base");
+  }
+}
+
+.orange-color {
+  .base {
+    background-color: color("orange", "base");
+  }
+}

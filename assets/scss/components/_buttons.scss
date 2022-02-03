@@ -1,0 +1,22 @@
+.button-primary {
+  padding: $button-padding;
+  background-color: color("blue", "base");
+  color: color("shades", "white");
+  border: none;
+  font-size: $body-medium;
+  &.green {
+    background-color: color("green", "base");
+  }
+}
+.button-link {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: $body-medium;
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  &:hover {
+    color: color("blue", "base");
+  }
+}

@@ -1,0 +1,22 @@
+footer {
+  padding: 8rem 0;
+  border-top: 1rem solid color("blue", "base");
+  .logo-images {
+    img {
+      margin: 3rem 1rem 0 0;
+    }
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    li {
+      line-height: 2;
+    }
+    &.social-links {
+      li {
+        display: inline-block;
+        margin-right: 1.2rem;
+      }
+    }
+  }
+}

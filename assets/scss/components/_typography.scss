@@ -1,0 +1,108 @@
+@font-face {
+  font-family: Montserrat Regular;
+  src: url(../font/Montserrat-Regular.otf);
+}
+@font-face {
+  font-family: Montserrat Medium;
+  src: url(../font/Montserrat-Medium.otf);
+}
+@font-face {
+  font-family: Montserrat Semibold;
+  src: url(../font/Montserrat-Semibold.otf);
+}
+@font-face {
+  font-family: Montserrat Bold;
+  src: url(../font/Montserrat-Bold.otf);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-semibold;
+  color: color("grey", "lighten-1");
+  font-weight: 500;
+}
+p {
+  font-family: $font-regular;
+}
+.pre-heading {
+  font-size: $body-medium;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: $font-bold;
+}
+
+.small-cap {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: $font-bold;
+  font-size: $small-cap;
+}
+
+.text-medium {
+  font-family: $font-medium;
+}
+
+.body-large {
+  font-size: $body-large;
+}
+
+.body-large-medium {
+  font-family: $font-medium;
+  font-size: $body-large;
+  color: color("grey", "lighten-2");
+  line-height: 150%;
+}
+
+// Header Styles
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  font-weight: inherit;
+}
+h1 {
+  font-size: $h1-fontsize;
+  line-height: 120%;
+}
+h2 {
+  font-size: $h2-fontsize;
+  line-height: 120%;
+}
+h3 {
+  font-size: $h3-fontsize;
+  line-height: 120%;
+}
+h4 {
+  font-size: $h4-fontsize;
+  line-height: 120%;
+}
+h5 {
+  font-size: $h5-fontsize;
+  line-height: 120%;
+}
+h6 {
+  font-size: $h6-fontsize;
+  line-height: 120%;
+}
+
+// Text Styles
+em {
+  font-style: italic;
+}
+strong {
+  font-weight: 500;
+}
+small {
+  font-size: 75%;
+}
+.light {
+  font-weight: 300;
+}
+.thin {
+  font-weight: 200;
+}

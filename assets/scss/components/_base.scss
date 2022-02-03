@@ -1,0 +1,90 @@
+html {
+  font-size: 62.5%;
+}
+
+a {
+  font-family: $font-medium;
+  color: color("blue", "base");
+  font-size: $body-medium;
+  text-decoration: none;
+}
+p {
+  color: color("grey", "lighten-2");
+  line-height: 140%;
+  font-size: $body-medium;
+}
+.no-margin {
+  margin: 0 !important;
+}
+.mr-0 {
+  margin-right: 0 !important;
+}
+.mt-0 {
+  margin-top: 0 !important;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.large-button {
+  padding: $large-button-padding !important;
+}
+
+.small-button {
+  padding: $small-button-padding !important;
+  font-size: 1.4rem !important;
+}
+
+.float-left {
+  float: left !important;
+}
+
+.float-right {
+  float: right !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+input:focus {
+  outline: 0;
+}
+
+.flex {
+  @include flexbox;
+}
+
+input,
+select {
+  color: color("grey", "lighten-2") !important;
+}
+
+label,
+mat-label {
+  font-size: 1.6rem;
+  color: #434343;
+  display: block;
+  font-family: $font-medium;
+}
+
+textarea {
+  border: 1px solid color("grey", "lighten-6") !important;
+  border-radius: $button-radius-default;
+  height: 140px;
+  margin-top: 1.5rem !important;
+  padding: 2rem !important;
+  color: color("grey", "lighten-2") !important;
+}

@@ -1,0 +1,227 @@
+.intro {
+  .inner-content {
+    text-align: center;
+    max-width: 70rem;
+    margin: auto;
+    padding: 8rem 0 3.2rem;
+  }
+}
+
+.five-carrier-screening {
+  background-color: lighten(color("green", "base"), 65%);
+  background-image: url(../images/circle-bg.svg);
+  background-size: 100%;
+  padding: 8rem 0;
+  margin: 5rem 0 8rem;
+  &.percept {
+    background-color: lighten(color("blue", "base"), 69%);
+    background-image: url(../images/circle-bg-1.svg);
+  }
+  .button-link {
+    margin-top: 1.6rem;
+    img {
+      margin-left: 0.5rem;
+    }
+  }
+  .row {
+    display: flex;
+    align-items: center;
+  }
+  .content {
+    margin-left: 3rem;
+    h3 {
+      margin-top: 0;
+    }
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    li {
+      font-size: $body-medium;
+      font-family: $font-regular;
+      margin: 1.2rem 0;
+      line-height: 140%;
+      position: relative;
+      &::before {
+        position: absolute;
+        left: -3rem;
+        top: 0;
+        height: 20px;
+        width: 20px;
+        content: "";
+        background-image: url(../images/plus.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+      &:last-child {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+}
+
+.choose-test {
+  &.percept {
+    .content {
+      border: 1px solid color("blue", "lighten-2");
+      .test-header {
+        background-color: lighten(color("blue", "lighten-2"), 45%);
+        height: auto;
+      }
+    }
+  }
+  .content {
+    border: 1px solid color("green", "lighten");
+    margin-top: 4.8rem;
+    p {
+      font-size: $body-medium;
+      &.small-cap {
+        font-size: $small-cap;
+      }
+    }
+    .test-header {
+      text-align: left;
+      background-color: lighten(color("green", "lighten"), 48%);
+      padding: 2rem;
+      height: 21.4rem;
+    }
+    .test-body {
+      p {
+        margin: 0 0 0.4rem;
+        &.small-cap {
+          margin-bottom: 0.6rem;
+        }
+      }
+    }
+    li {
+      list-style-type: none;
+      display: flex;
+      text-align: left;
+      border-bottom: 1px solid color("grey", "lighten-5");
+      margin: 2rem 0;
+      padding: 0 2rem 2rem;
+      &:last-child {
+        margin-bottom: 0;
+        border: none;
+        padding-bottom: 1rem;
+      }
+      .icon {
+        display: inline-block;
+        margin-right: 1.6rem;
+      }
+    }
+  }
+}
+
+.arrange-testing {
+  background-image: url(../images/arrange-testing-bg.svg);
+  background-size: cover;
+  padding: 8rem 0;
+  &.percept {
+    background-image: url(../images/arrange-testing-bg-1.svg);
+    h2 {
+      margin-bottom: 6.4rem;
+    }
+    .inner-content {
+      margin: -4rem 0;
+    }
+    .link-button {
+      a {
+        display: inline-flex;
+        align-items: center;
+        margin-top: 1rem;
+        img {
+          transform: rotate(-90deg);
+          margin-left: 0.4rem;
+        }
+      }
+    }
+    .step {
+      border: 1px solid color("blue", "lighten-2");
+      height: auto !important;
+      margin: 0;
+      a {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        img {
+          transform: rotate(-90deg);
+          margin-left: 0.4rem;
+        }
+      }
+    }
+    .col.m6:last-child {
+      .inner-content {
+        &::before {
+          background-image: url(../images/person.svg);
+          width: 10.8rem;
+          height: 42.3rem;
+          top: -42.3rem;
+        }
+      }
+    }
+  }
+  .col.m6:last-child {
+    .inner-content {
+      &::before {
+        position: absolute;
+        height: 41.3rem;
+        width: 22.7rem;
+        background-image: url(../images/people.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        content: "";
+        right: 0;
+        top: -41.3rem;
+      }
+      .button-primary.green {
+        position: absolute;
+        right: auto;
+        left: 0;
+        top: -4.3rem;
+      }
+    }
+  }
+  .inner-content {
+    position: relative;
+    margin-top: 6.4rem;
+    .step {
+      height: 19.6rem;
+    }
+    .button-primary.green {
+      position: absolute;
+      right: 0;
+      top: -4.3rem;
+    }
+  }
+  .step {
+    display: flex;
+    margin: 2.4rem 0;
+    padding: 2rem;
+    background-color: color("shades", "white");
+    border: 1px solid color("green", "lighten");
+    .icon {
+      margin-right: 2rem;
+    }
+    h4 {
+      font-family: $font-semibold;
+      font-weight: 500;
+      a {
+        font-size: $h4-fontsize;
+      }
+      & + p {
+        font-size: $body-medium;
+      }
+    }
+    p {
+      margin: 1rem 0;
+    }
+  }
+  .link-button {
+    text-align: center;
+    margin-top: 4rem;
+    a {
+      margin: 0 2rem;
+    }
+  }
+}
