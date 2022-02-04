@@ -74,30 +74,44 @@
   }
 }
 
-// $text-maps: (
-//     'text-align': (
-//         left:left,
-//         center:center,
-//         right:right,
-//         justify:justify
-//     ),
-//     'text-transform': (
-//         uppercase:uppercase,
-//         lowercase:lowercase,
-//         capitalize:capitalize,
-//         none:none,
-//         inherit:inherit,
-//         initial:initial,
-//         unset:unset
-//     ),
-//     'text-decoration': (
-//         overline:overline,
-//         line-through:line-through,
-//         underline:underline,
-//         none:none
-//     ),
-// ) !default;
+/* breakpoints */
 
-// @function text-map($text-property, $text-value) {
-//     @return map-get(map-get($text-maps, $text-property), $text-value);
-// }
+@mixin breakpoint($point) {
+  @if $point==mac {
+    @media (max-width: 1440px) {
+      @content;
+    }
+    /* 1440 px*/
+  }
+
+  @if $point==large {
+    @media (max-width: 1200px) {
+      @content;
+    }
+    /* 1024 px*/
+  } @else if $point==medium {
+    @media (max-width: 992px) {
+      @content;
+    }
+
+    /* 991 px*/
+  } @else if $point==small {
+    @media (max-width: 768px) {
+      @content;
+    }
+
+    /* 767 px*/
+  } @else if $point==x-small {
+    @media (max-width: 576px) {
+      @content;
+    }
+
+    /* 480 px*/
+  } @else if $point==iphone {
+    @media (max-width: 375px) {
+      @content;
+    }
+
+    /* 375 px*/
+  }
+}

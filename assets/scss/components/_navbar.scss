@@ -1,5 +1,23 @@
-nav {
+.topnav {
   padding: 1.5rem 0;
+  position: relative;
+  &.responsive {
+    @include breakpoint(medium) {
+      position: relative;
+    }
+    li {
+      @include breakpoint(medium) {
+        display: block;
+        line-height: 2.2;
+      }
+    }
+  }
+  .menu-icon {
+    display: none;
+    @include breakpoint(medium) {
+      display: block;
+    }
+  }
   .inner-content {
     display: flex;
     justify-content: space-between;
@@ -11,6 +29,15 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin: 0;
+    @include breakpoint(medium) {
+      padding: 1.5rem;
+      position: absolute;
+      top: 8rem;
+      display: block;
+      width: 100%;
+      left: 0;
+      background-color: color("shades", "white");
+    }
     .dropdown {
       position: relative;
       &::after {
@@ -21,13 +48,29 @@ nav {
         background-repeat: no-repeat;
         background-position: center center;
         content: "";
-        top: -2px;
-        right: -30px;
+        top: -0.2rem;
+        right: -3rem;
         cursor: pointer;
+        @include breakpoint(medium) {
+          right: auto;
+          top: 0.6rem;
+        }
       }
     }
     li {
       margin: 0 4.4rem;
+      @include breakpoint(large) {
+        margin: 0 2.4rem;
+      }
+      @include breakpoint(medium) {
+        display: none;
+        margin: 0;
+      }
+    }
+  }
+  .button-primary {
+    @include breakpoint(large) {
+      margin-right: 2rem;
     }
   }
 
