@@ -4,8 +4,12 @@
   color: color("shades", "white");
   border: none;
   font-size: $body-medium;
+  line-height: 2.8rem;
   &.green {
     background-color: color("green", "base");
+  }
+  @include breakpoint(x-small) {
+    padding: $small-button-padding;
   }
 }
 .button-link {

@@ -12,6 +12,19 @@
       }
     }
   }
+  .logo {
+    @include breakpoint(small) {
+      width: 11.6rem;
+    }
+  }
+  .button-primary {
+    @include breakpoint(large) {
+      margin-right: 2rem;
+    }
+    @include breakpoint(small) {
+      margin-right: 1rem;
+    }
+  }
   .menu-icon {
     display: none;
     @include breakpoint(medium) {
@@ -88,11 +101,6 @@
         display: none;
         margin: 0;
       }
-    }
-  }
-  .button-primary {
-    @include breakpoint(large) {
-      margin-right: 2rem;
     }
   }
 }

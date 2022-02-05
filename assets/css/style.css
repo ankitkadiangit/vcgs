@@ -399,6 +399,10 @@ p {
   line-height: 140%;
   font-size: 1.6rem; }
 
+img {
+  max-width: 100%;
+  height: auto; }
+
 .no-margin {
   margin: 0 !important; }
 
@@ -418,7 +422,7 @@ p {
   padding: 13px 63px !important; }
 
 .small-button {
-  padding: 3px 40px !important;
+  padding: 0.8rem 1.6rem !important;
   font-size: 1.4rem !important; }
 
 .float-left {
@@ -470,9 +474,14 @@ textarea {
   background-color: #00538b;
   color: #ffffff;
   border: none;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  /* 480 px*/ }
   .button-primary.green {
     background-color: #15803d; }
+  @media (max-width: 576px) {
+    .button-primary {
+      padding: 0.8rem 1.6rem; } }
 
 .button-link {
   background-color: transparent;
@@ -499,6 +508,20 @@ textarea {
         .topnav.responsive li {
           display: block;
           line-height: 2.2; } }
+  .topnav .logo {
+    /* 767 px*/ }
+    @media (max-width: 768px) {
+      .topnav .logo {
+        width: 11.6rem; } }
+  .topnav .button-primary {
+    /* 1024 px*/
+    /* 767 px*/ }
+    @media (max-width: 1200px) {
+      .topnav .button-primary {
+        margin-right: 2rem; } }
+    @media (max-width: 768px) {
+      .topnav .button-primary {
+        margin-right: 1rem; } }
   .topnav .menu-icon {
     display: none;
     /* 991 px*/ }
@@ -572,23 +595,26 @@ textarea {
         .topnav ul li {
           display: none;
           margin: 0; } }
-  .topnav .button-primary {
-    /* 1024 px*/ }
-    @media (max-width: 1200px) {
-      .topnav .button-primary {
-        margin-right: 2rem; } }
 
 .tab {
   display: flex;
   background-image: url(../images/tab-line.svg);
+  /* 991 px*/
   /* Style the buttons inside the tab */ }
+  @media (max-width: 992px) {
+    .tab {
+      display: block; } }
   .tab button {
     border: none;
     outline: none;
     cursor: pointer;
     padding: 2.4rem;
     transition: 0.3s;
-    width: calc(100% / 3); }
+    width: calc(100% / 3);
+    /* 991 px*/ }
+    @media (max-width: 992px) {
+      .tab button {
+        width: 100%; } }
     .tab button.active {
       position: relative; }
       .tab button.active::after {
@@ -597,14 +623,23 @@ textarea {
         left: 0;
         width: 100%;
         height: 4px;
-        bottom: 0; }
+        bottom: 0;
+        /* 991 px*/ }
+        @media (max-width: 992px) {
+          .tab button.active::after {
+            height: 100%;
+            width: 4px; } }
       .tab button.active::before {
         position: absolute;
         content: "";
         left: 0;
         width: 100%;
         height: 1.6rem;
-        top: -1.6rem; }
+        top: -1.6rem;
+        /* 991 px*/ }
+        @media (max-width: 992px) {
+          .tab button.active::before {
+            display: none; } }
       .tab button.active:nth-child(1) .image {
         background-color: #15803d; }
         .tab button.active:nth-child(1) .image img {
@@ -654,18 +689,29 @@ textarea {
           margin-bottom: 5px; }
       .tab button .tab-inner .content h4 {
         margin: 0;
-        text-align: left; }
+        text-align: left;
+        /* 1024 px*/ }
+        @media (max-width: 1200px) {
+          .tab button .tab-inner .content h4 {
+            font-size: 1.5rem; } }
 
 /* Style the tab content */
 .tabcontent {
   display: none;
   padding: 2rem;
-  text-align: center; }
+  text-align: center;
+  /* 991 px*/ }
+  @media (max-width: 992px) {
+    .tabcontent {
+      padding: 1.5rem 1.5rem 3rem; } }
   .tabcontent p {
     line-height: 140%;
-    margin: 1rem 0; }
+    margin: 1rem 0;
+    /* 991 px*/ }
+    @media (max-width: 992px) {
+      .tabcontent p {
+        font-size: 1.6rem; } }
 
-/* Style the close button */
 footer {
   padding: 8rem 0;
   border-top: 1rem solid #00538b; }
@@ -684,7 +730,25 @@ footer {
   text-align: center;
   max-width: 70rem;
   margin: auto;
-  padding: 8rem 0 3.2rem; }
+  padding: 8rem 0 3.2rem;
+  /* 991 px*/
+  /* 991 px*/ }
+  @media (max-width: 992px) {
+    .intro .inner-content {
+      padding: 4rem 0 2rem; } }
+  .intro .inner-content .pre-heading {
+    /* 991 px*/ }
+    @media (max-width: 992px) {
+      .intro .inner-content .pre-heading {
+        font-size: 1.3rem; } }
+  .intro .inner-content h1 {
+    /* 991 px*/ }
+    @media (max-width: 992px) {
+      .intro .inner-content h1 {
+        font-size: 3.1rem; } }
+  @media (max-width: 992px) {
+    .intro .inner-content .body-large-medium {
+      font-size: 1.6rem; } }
 
 .five-carrier-screening {
   background-color: #e6fbee;
@@ -695,6 +759,10 @@ footer {
   .five-carrier-screening.percept {
     background-color: #ecf7ff;
     background-image: url(../images/circle-bg-1.svg); }
+  .five-carrier-screening iframe {
+    max-width: 56rem !important;
+    width: 100%;
+    height: 31.5rem; }
   .five-carrier-screening .button-link {
     margin-top: 1.6rem; }
     .five-carrier-screening .button-link img {

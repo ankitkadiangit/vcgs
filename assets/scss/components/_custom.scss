@@ -4,6 +4,24 @@
     max-width: 70rem;
     margin: auto;
     padding: 8rem 0 3.2rem;
+    @include breakpoint(medium) {
+      padding: 4rem 0 2rem;
+    }
+    .pre-heading {
+      @include breakpoint(medium) {
+        font-size: $small-cap;
+      }
+    }
+    h1 {
+      @include breakpoint(medium) {
+        font-size: $h2-fontsize;
+      }
+    }
+    @include breakpoint(medium) {
+      .body-large-medium {
+        font-size: $body-medium;
+      }
+    }
   }
 }
 
@@ -16,6 +34,11 @@
   &.percept {
     background-color: lighten(color("blue", "base"), 69%);
     background-image: url(../images/circle-bg-1.svg);
+  }
+  iframe {
+    max-width: 56rem !important;
+    width: 100%;
+    height: 31.5rem;
   }
   .button-link {
     margin-top: 1.6rem;
