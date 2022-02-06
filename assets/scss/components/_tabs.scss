@@ -125,6 +125,10 @@
           @include breakpoint(large) {
             font-size: 1.5rem;
           }
+          @include breakpoint(medium) {
+            font-size: $body-medium;
+            font-family: $font-semibold;
+          }
         }
       }
     }
@@ -137,12 +141,12 @@
   padding: 2rem;
   text-align: center;
   @include breakpoint(medium) {
-    padding: 1.5rem 1.5rem 3rem;
+    padding: 1.5rem 0 3rem;
   }
   p {
     line-height: 140%;
     margin: 1rem 0;
-    @include breakpoint(medium) {
+    @include breakpoint(small) {
       font-size: $body-medium;
     }
   }

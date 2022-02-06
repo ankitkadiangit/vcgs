@@ -7,21 +7,6 @@
     @include breakpoint(medium) {
       padding: 4rem 0 2rem;
     }
-    .pre-heading {
-      @include breakpoint(medium) {
-        font-size: $small-cap;
-      }
-    }
-    h1 {
-      @include breakpoint(medium) {
-        font-size: $h2-fontsize;
-      }
-    }
-    @include breakpoint(medium) {
-      .body-large-medium {
-        font-size: $body-medium;
-      }
-    }
   }
 }
 
@@ -31,6 +16,10 @@
   background-size: 100%;
   padding: 8rem 0;
   margin: 5rem 0 8rem;
+  @include breakpoint(medium) {
+    padding: 4rem 0;
+    margin: 0 0 4rem;
+  }
   &.percept {
     background-color: lighten(color("blue", "base"), 69%);
     background-image: url(../images/circle-bg-1.svg);
@@ -49,9 +38,15 @@
   .row {
     display: flex;
     align-items: center;
+    @include breakpoint(medium) {
+      display: block;
+    }
   }
   .content {
     margin-left: 3rem;
+    @include breakpoint(medium) {
+      margin: 4rem 0 0;
+    }
     h3 {
       margin-top: 0;
     }
@@ -65,6 +60,9 @@
       margin: 1.2rem 0;
       line-height: 140%;
       position: relative;
+      @include breakpoint(medium) {
+        padding-left: 3rem;
+      }
       &::before {
         position: absolute;
         left: -3rem;
@@ -75,9 +73,15 @@
         background-image: url(../images/plus.svg);
         background-size: 100%;
         background-repeat: no-repeat;
+        @include breakpoint(medium) {
+          left: 0;
+        }
       }
       &:last-child {
         margin-bottom: 4rem;
+        @include breakpoint(medium) {
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -93,9 +97,34 @@
       }
     }
   }
+  .tab-mobile-plan {
+    display: none;
+    text-align: left;
+    @include breakpoint(medium) {
+      display: block;
+      margin-top: 1.6rem;
+    }
+    .green:not(.active) {
+      background-color: color("grey", "lighten-6");
+      color: color("grey", "lighten-1");
+    }
+  }
+  .col.l5 {
+    @include breakpoint(medium) {
+      float: none;
+    }
+  }
+  #plus-plan {
+    @include breakpoint(medium) {
+      display: none;
+    }
+  }
   .content {
     border: 1px solid color("green", "lighten");
     margin-top: 4.8rem;
+    @include breakpoint(medium) {
+      margin-top: 0;
+    }
     p {
       font-size: $body-medium;
       &.small-cap {
@@ -107,6 +136,9 @@
       background-color: lighten(color("green", "lighten"), 48%);
       padding: 2rem;
       height: 21.4rem;
+      @include breakpoint(medium) {
+        height: auto;
+      }
     }
     .test-body {
       p {
@@ -184,6 +216,21 @@
       }
     }
   }
+  .tab-section {
+    @include breakpoint(large) {
+      display: flex;
+      margin-top: 4rem;
+      .col {
+        display: table;
+        .inner-content {
+          display: table-row;
+          .step {
+            display: table-cell;
+          }
+        }
+      }
+    }
+  }
   .col.m6:last-child {
     .inner-content {
       &::before {
@@ -196,6 +243,9 @@
         content: "";
         right: 0;
         top: -41.3rem;
+        @include breakpoint(large) {
+          display: none;
+        }
       }
       .button-primary.green {
         position: absolute;
@@ -210,11 +260,18 @@
     margin-top: 6.4rem;
     .step {
       height: 19.6rem;
+      @include breakpoint(large) {
+        height: auto;
+      }
     }
     .button-primary.green {
       position: absolute;
       right: 0;
       top: -4.3rem;
+      &#prepair-plus-step {
+        right: auto;
+        left: 0;
+      }
     }
   }
   .step {
@@ -225,6 +282,7 @@
     border: 1px solid color("green", "lighten");
     .icon {
       margin-right: 2rem;
+      flex: 0 0 5.4rem;
     }
     h4 {
       font-family: $font-semibold;

@@ -125,14 +125,14 @@
 <section class="five-carrier-screening">
   <div class="container">
     <div class="row">
-      <div class="col m6">
+      <div class="col l6">
         <iframe src="https://www.youtube.com/embed/g_jxc7KwgLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <button class="button-link">
           Show video transcript
           <img src="assets/images/arrow-right.svg" alt="">
         </button>
       </div>
-      <div class="col m6">
+      <div class="col l6">
         <div class="content">
         <h3 class="green base-text">
           5 things to know about carrier screening
@@ -168,8 +168,16 @@
     <h2 class="mt-0">
       VCGS offers two carrier screening test options. 
     </h2>
+    <div class="tab-mobile-plan">
+    <button id="prepair-visible" class="button-primary green active">
+      prepair
+    </button>
+    <button id="plus-visible" class="button-primary green">
+      prepair+
+    </button>
+  </div>
     <div class="row">
-      <div class="col m5 push-m1">
+      <div id="prepair-plan" class="col l5 push-l1">
         <div class="content">
           <div class="test-header">
             <div class="image">
@@ -267,7 +275,7 @@
         </div>
         <p class="text-left">Learn more about what are  CF, SMA and FXS <a href="#"> here</a>.</p>
       </div>
-      <div class="col m5 push-m1">
+      <div id="plus-plan" class="col l5 push-l1">
         <div class="content">
           <div class="test-header">
             <div class="image">
@@ -365,7 +373,7 @@
           </div>
         </div>
       </div>
-      <div class="col m1"></div>
+      <div class="col l1"></div>
     </div>
   </div>
 </section>
@@ -374,7 +382,7 @@
   <div class="container">
     <h2 class="text-center">How to arrange testing through VCGS</h2>
     <div class="row">
-      <div class="col m6 push-m3">
+      <div class="col l6 push-l3">
         <div class="step">
           <div class="icon">
             <img src="assets/images/step-1.svg" alt="">
@@ -391,8 +399,8 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col m6">
+    <div class="row tab-section">
+      <div class="col l6">
         <div class="inner-content">
         <button id="prepair-step" class="button-primary green">
           Prepair
@@ -413,7 +421,7 @@
         </div>
         </div>
       </div>
-      <div class="col m6">
+      <div class="col l6">
         <div class="inner-content">
         <button id="prepair-plus-step" class="button-primary green">
           Prepair+
@@ -438,7 +446,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col m6 push-m3">
+      <div class="col l6 push-l3">
         <div class="step">
           <div class="icon">
             <img src="assets/images/step-3.svg" alt="">
@@ -538,7 +546,10 @@
     </div>
   </div>
 </footer>
-
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
 <script src="assets/js/custom.js"></script>
 </body>
 </html>

@@ -31,3 +31,18 @@ function menuMobile() {
     x.className = "topnav";
   }
 }
+
+$(document).ready(function(){
+$('#prepair-visible').click(function(){
+  $('#plus-visible').removeClass('active');
+  $(this).addClass('active');
+  $('#prepair-plan').show();
+  $('#plus-plan').hide();
+});
+$('#plus-visible').click(function(){
+  $('#prepair-visible').removeClass('active');
+  $(this).addClass('active');
+  $('#prepair-plan').hide();
+  $('#plus-plan').show();
+});
+});

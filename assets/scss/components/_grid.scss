@@ -31,8 +31,8 @@
 }
 
 .row {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
 
   // Clear floating children
   &:after {
