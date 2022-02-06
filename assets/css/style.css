@@ -906,11 +906,23 @@ footer {
     .arrange-testing {
       padding: 4rem 0 2rem; } }
   .arrange-testing.percept {
-    background-image: url(../images/arrange-testing-bg-1.svg); }
+    background-image: url(../images/arrange-testing-bg-1.svg);
+    /* 991 px*/ }
+    @media (max-width: 992px) {
+      .arrange-testing.percept {
+        padding-bottom: 4rem; } }
     .arrange-testing.percept h2 {
-      margin-bottom: 6.4rem; }
+      margin-bottom: 6.4rem;
+      /* 991 px*/ }
+      @media (max-width: 992px) {
+        .arrange-testing.percept h2 {
+          margin-bottom: 4rem; } }
     .arrange-testing.percept .inner-content {
-      margin: -4rem 0; }
+      margin: -4rem 0;
+      /* 1024 px*/ }
+      @media (max-width: 1200px) {
+        .arrange-testing.percept .inner-content {
+          margin: 2.4rem 0; } }
     .arrange-testing.percept .link-button a {
       display: inline-flex;
       align-items: center;

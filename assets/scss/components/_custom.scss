@@ -178,11 +178,20 @@
   }
   &.percept {
     background-image: url(../images/arrange-testing-bg-1.svg);
+    @include breakpoint(medium) {
+      padding-bottom: 4rem;
+    }
     h2 {
       margin-bottom: 6.4rem;
+      @include breakpoint(medium) {
+        margin-bottom: 4rem;
+      }
     }
     .inner-content {
       margin: -4rem 0;
+      @include breakpoint(large) {
+        margin: 2.4rem 0;
+      }
     }
     .link-button {
       a {
