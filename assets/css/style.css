@@ -1102,8 +1102,56 @@ footer {
 /*==== Prepair 3.1 Page code starts ====*/
 .carrier-banner {
   display: flex;
-  align-items: center;
-  height: 44.6rem; }
+  align-items: flex-end; }
+  .carrier-banner .row {
+    display: flex;
+    align-items: flex-end; }
+  .carrier-banner .inner-content {
+    margin: 14.6rem 0; }
+
+.carrier-screening-option .tab button {
+  padding: 1.6rem 3.2rem;
+  background-color: #d9f9e5; }
+  .carrier-screening-option .tab button img {
+    max-width: 21.7rem; }
+  .carrier-screening-option .tab button.active {
+    background-color: #ffffff; }
+.carrier-screening-option .tabcontent {
+  background-color: #ffffff;
+  padding: 2.4rem 3.2rem; }
+  .carrier-screening-option .tabcontent ul {
+    list-style-type: disc;
+    padding-left: 2rem; }
+    .carrier-screening-option .tabcontent ul li::before {
+      display: none; }
+  .carrier-screening-option .tabcontent .inner-content {
+    padding: 2rem;
+    border: 1px solid #83d189;
+    flex: 0 0 calc(100% / 3); }
+  .carrier-screening-option .tabcontent .flex {
+    border: 1px solid #83d189;
+    margin-top: 2.4rem; }
+
+.career-screening-tell.five-carrier-screening.percept {
+  background-image: url(../images/career-bg.svg);
+  background-size: cover;
+  background-color: transparent;
+  padding-top: 0;
+  margin-top: 0; }
+  .career-screening-tell.five-carrier-screening.percept h3 {
+    color: #21262c; }
+  .career-screening-tell.five-carrier-screening.percept .flex {
+    align-items: center; }
+    .career-screening-tell.five-carrier-screening.percept .flex > div {
+      flex: 0 0 50%; }
+      .career-screening-tell.five-carrier-screening.percept .flex > div img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%; }
+      .career-screening-tell.five-carrier-screening.percept .flex > div.content {
+        padding: 0 6.4rem 0 11rem; }
+  .career-screening-tell.five-carrier-screening.percept ul li:last-child {
+    margin-bottom: 0; }
 
 /*==== Prepair 3.1 Page code ends ====*/
 @font-face {
@@ -1151,7 +1199,7 @@ p {
   font-family: "Montserrat Medium", sans-serif; }
 
 .body-large {
-  font-size: 2rem; }
+  font-size: 2rem !important; }
 
 .body-large-medium {
   font-family: "Montserrat Medium", sans-serif;
