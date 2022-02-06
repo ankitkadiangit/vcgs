@@ -1,9 +1,25 @@
 footer {
   padding: 8rem 0;
   border-top: 1rem solid color("blue", "base");
+  @include breakpoint(medium) {
+    padding: 4rem 0;
+  }
+  .row .col {
+    @include breakpoint(x-small) {
+      float: none;
+    }
+  }
   .logo-images {
     img {
       margin: 3rem 1rem 0 0;
+      @include breakpoint(medium) {
+        max-width: 15rem;
+      }
+    }
+  }
+  .pre-heading {
+    @include breakpoint(small) {
+      margin-top: 4rem;
     }
   }
   ul {

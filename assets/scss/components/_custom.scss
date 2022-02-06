@@ -163,6 +163,7 @@
       .icon {
         display: inline-block;
         margin-right: 1.6rem;
+        flex: 0 0 4.4rem;
       }
     }
   }
@@ -172,6 +173,9 @@
   background-image: url(../images/arrange-testing-bg.svg);
   background-size: cover;
   padding: 8rem 0;
+  @include breakpoint(medium) {
+    padding: 4rem 0 2rem;
+  }
   &.percept {
     background-image: url(../images/arrange-testing-bg-1.svg);
     h2 {
@@ -216,6 +220,28 @@
       }
     }
   }
+  .row .col {
+    @include breakpoint(medium) {
+      float: none;
+    }
+  }
+  .tab-mobile-plan {
+    display: none;
+    text-align: left;
+    @include breakpoint(medium) {
+      display: block;
+      margin-top: 2.4rem;
+    }
+    .green:not(.active) {
+      background-color: color("grey", "lighten-6");
+      color: color("grey", "lighten-1");
+    }
+  }
+  #step-plus-plan {
+    @include breakpoint(medium) {
+      display: none;
+    }
+  }
   .tab-section {
     @include breakpoint(large) {
       display: flex;
@@ -226,6 +252,21 @@
           display: table-row;
           .step {
             display: table-cell;
+          }
+        }
+      }
+    }
+    @include breakpoint(medium) {
+      display: block;
+      margin-top: 0;
+      .col {
+        display: block;
+        .inner-content {
+          display: block;
+          margin-top: 0;
+          .step {
+            display: block;
+            margin-top: 0;
           }
         }
       }
@@ -272,6 +313,9 @@
         right: auto;
         left: 0;
       }
+      @include breakpoint(medium) {
+        display: none;
+      }
     }
   }
   .step {
@@ -301,8 +345,18 @@
   .link-button {
     text-align: center;
     margin-top: 4rem;
+    @include breakpoint(small) {
+      text-align: left;
+      margin-top: 1.6rem;
+    }
     a {
       margin: 0 2rem;
+      @include breakpoint(small) {
+        margin: 0;
+        display: block;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
     }
   }
 }

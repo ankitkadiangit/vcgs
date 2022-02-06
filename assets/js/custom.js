@@ -45,4 +45,16 @@ $('#plus-visible').click(function(){
   $('#prepair-plan').hide();
   $('#plus-plan').show();
 });
+$('#step-prepair-visible').click(function(){
+  $('#step-plus-visible').removeClass('active');
+  $(this).addClass('active');
+  $('#step-prepair-plan').show();
+  $('#step-plus-plan').hide();
+});
+$('#step-plus-visible').click(function(){
+  $('#step-prepair-visible').removeClass('active');
+  $(this).addClass('active');
+  $('#step-prepair-plan').hide();
+  $('#step-plus-plan').show();
+});
 });

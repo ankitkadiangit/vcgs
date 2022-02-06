@@ -422,7 +422,7 @@ img {
   padding: 13px 63px !important; }
 
 .small-button {
-  padding: 0.8rem 1.6rem !important;
+  padding: 1.2rem 1.6rem !important;
   font-size: 1.4rem !important; }
 
 .float-left {
@@ -482,7 +482,7 @@ textarea {
     background-color: #15803d; }
   @media (max-width: 576px) {
     .button-primary {
-      padding: 0.8rem 1.6rem; } }
+      padding: 1.2rem 1.6rem; } }
 
 .button-link {
   background-color: transparent;
@@ -720,9 +720,27 @@ textarea {
 
 footer {
   padding: 8rem 0;
-  border-top: 1rem solid #00538b; }
+  border-top: 1rem solid #00538b;
+  /* 991 px*/ }
+  @media (max-width: 992px) {
+    footer {
+      padding: 4rem 0; } }
+  footer .row .col {
+    /* 480 px*/ }
+    @media (max-width: 576px) {
+      footer .row .col {
+        float: none; } }
   footer .logo-images img {
-    margin: 3rem 1rem 0 0; }
+    margin: 3rem 1rem 0 0;
+    /* 991 px*/ }
+    @media (max-width: 992px) {
+      footer .logo-images img {
+        max-width: 15rem; } }
+  footer .pre-heading {
+    /* 767 px*/ }
+    @media (max-width: 768px) {
+      footer .pre-heading {
+        margin-top: 4rem; } }
   footer ul {
     list-style-type: none;
     padding: 0; }
@@ -876,12 +894,17 @@ footer {
       padding-bottom: 1rem; }
     .choose-test .content li .icon {
       display: inline-block;
-      margin-right: 1.6rem; }
+      margin-right: 1.6rem;
+      flex: 0 0 4.4rem; }
 
 .arrange-testing {
   background-image: url(../images/arrange-testing-bg.svg);
   background-size: cover;
-  padding: 8rem 0; }
+  padding: 8rem 0;
+  /* 991 px*/ }
+  @media (max-width: 992px) {
+    .arrange-testing {
+      padding: 4rem 0 2rem; } }
   .arrange-testing.percept {
     background-image: url(../images/arrange-testing-bg-1.svg); }
     .arrange-testing.percept h2 {
@@ -911,8 +934,30 @@ footer {
       width: 10.8rem;
       height: 42.3rem;
       top: -42.3rem; }
+  .arrange-testing .row .col {
+    /* 991 px*/ }
+    @media (max-width: 992px) {
+      .arrange-testing .row .col {
+        float: none; } }
+  .arrange-testing .tab-mobile-plan {
+    display: none;
+    text-align: left;
+    /* 991 px*/ }
+    @media (max-width: 992px) {
+      .arrange-testing .tab-mobile-plan {
+        display: block;
+        margin-top: 2.4rem; } }
+    .arrange-testing .tab-mobile-plan .green:not(.active) {
+      background-color: #eeeff0;
+      color: #21262c; }
+  .arrange-testing #step-plus-plan {
+    /* 991 px*/ }
+    @media (max-width: 992px) {
+      .arrange-testing #step-plus-plan {
+        display: none; } }
   .arrange-testing .tab-section {
-    /* 1024 px*/ }
+    /* 1024 px*/
+    /* 991 px*/ }
     @media (max-width: 1200px) {
       .arrange-testing .tab-section {
         display: flex;
@@ -923,6 +968,18 @@ footer {
             display: table-row; }
             .arrange-testing .tab-section .col .inner-content .step {
               display: table-cell; } }
+    @media (max-width: 992px) {
+      .arrange-testing .tab-section {
+        display: block;
+        margin-top: 0; }
+        .arrange-testing .tab-section .col {
+          display: block; }
+          .arrange-testing .tab-section .col .inner-content {
+            display: block;
+            margin-top: 0; }
+            .arrange-testing .tab-section .col .inner-content .step {
+              display: block;
+              margin-top: 0; } }
   .arrange-testing .col.m6:last-child .inner-content::before {
     position: absolute;
     height: 41.3rem;
@@ -954,10 +1011,14 @@ footer {
     .arrange-testing .inner-content .button-primary.green {
       position: absolute;
       right: 0;
-      top: -4.3rem; }
+      top: -4.3rem;
+      /* 991 px*/ }
       .arrange-testing .inner-content .button-primary.green#prepair-plus-step {
         right: auto;
         left: 0; }
+      @media (max-width: 992px) {
+        .arrange-testing .inner-content .button-primary.green {
+          display: none; } }
   .arrange-testing .step {
     display: flex;
     margin: 2.4rem 0;
@@ -978,9 +1039,21 @@ footer {
       margin: 1rem 0; }
   .arrange-testing .link-button {
     text-align: center;
-    margin-top: 4rem; }
+    margin-top: 4rem;
+    /* 767 px*/ }
+    @media (max-width: 768px) {
+      .arrange-testing .link-button {
+        text-align: left;
+        margin-top: 1.6rem; } }
     .arrange-testing .link-button a {
-      margin: 0 2rem; }
+      margin: 0 2rem;
+      /* 767 px*/ }
+      @media (max-width: 768px) {
+        .arrange-testing .link-button a {
+          margin: 0;
+          display: block;
+          text-align: center;
+          margin-bottom: 2rem; } }
 
 @font-face {
   font-family: Montserrat Regular;
