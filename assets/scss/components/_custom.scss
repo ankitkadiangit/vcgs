@@ -585,3 +585,115 @@
   }
 }
 /*==== Prepair 3.1 Page code ends ====*/
+
+/*==== Percept 3.2 Page code starts ====*/
+
+.condition-nipt.five-carrier-screening {
+  background-image: url(../images/circle-blue-bg.svg);
+  background-color: lighten(color("blue", "lighten"), 65%);
+  .tabcontent {
+    display: block;
+    ul {
+      padding-left: 6rem;
+      @include breakpoint(small) {
+        padding-left: 3rem;
+      }
+    }
+    li {
+      font-family: $font-regular;
+      margin: 1.2rem 0;
+      line-height: 140%;
+    }
+    p {
+      margin-bottom: 2.4rem;
+    }
+  }
+  .accordion {
+    margin-top: 3.2rem;
+  }
+  .accordion-content {
+    padding: 2.4rem;
+    p {
+      margin: 0 !important;
+    }
+  }
+}
+
+.percept-tell.career-screening-tell.five-carrier-screening {
+  background: color("shades", "white");
+  p {
+    margin-bottom: 2.4rem;
+  }
+  .button-primary {
+    margin: 0 0 2.4rem;
+  }
+  .flex {
+    align-items: stretch;
+  }
+  .accordion:last-of-type {
+    margin-bottom: 8rem;
+    @include breakpoint(medium) {
+      margin-bottom: 4rem;
+    }
+  }
+}
+
+.nipt-right.carrier-screening-option {
+  background-image: url(../images/nipt-right-bg.svg);
+  background-color: color("shades", "white");
+  padding-top: 0;
+  .tabcontent {
+    display: block;
+    box-shadow: 0 0 1.3rem color("grey", "lighten-5");
+  }
+  .button-primary {
+    margin: 3.2rem 0 0.8rem;
+  }
+  .accordion {
+    margin-top: 3.2rem;
+  }
+  .accordion-content {
+    padding: 2.4rem;
+    p {
+      margin: 0 !important;
+    }
+    &.border-custom {
+      padding: 0;
+      border: none;
+      .flex {
+        border-color: lighten(color("blue", "base"), 45%);
+        border-top: none;
+        border-right: none;
+        margin-top: 0;
+        .inner-content {
+          border: none;
+          border-right: 1px solid lighten(color("blue", "base"), 45%);
+          @include breakpoint(small) {
+            border-top: 1px solid lighten(color("blue", "base"), 45%);
+          }
+          &:first-of-type {
+            @include breakpoint(small) {
+              border-top: none;
+            }
+          }
+        }
+      }
+    }
+    .icon {
+      width: 100%;
+      height: auto;
+      display: flex;
+      margin-top: 3.2rem;
+      .question-text {
+        font-family: $font-medium;
+        margin-left: 1.2rem !important;
+      }
+    }
+  }
+}
+
+.question-contact.percept {
+  background-color: color("blue", "base");
+}
+
+/*==== Percept 3.2 Page code ends ====*/

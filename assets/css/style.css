@@ -513,6 +513,12 @@ textarea {
   justify-content: space-between;
   align-items: center;
   /* 767 px*/ }
+  .accordion.blue {
+    border: 1px solid #72c6ff;
+    color: #00538b; }
+    .accordion.blue::after {
+      color: #0369a1;
+      background-color: #e7f5ff; }
   @media (max-width: 768px) {
     .accordion {
       padding: 1.5rem; } }
@@ -541,6 +547,9 @@ textarea {
   border-top: 1px solid #d0dbe8; }
   .accordion-content p {
     margin-bottom: 2.4rem !important; }
+  .accordion-content.blue {
+    border: 1px solid #72c6ff;
+    border-top: 0; }
 
 .topnav {
   padding: 1.5rem 0;
@@ -1318,6 +1327,94 @@ footer {
         flex-direction: column-reverse; } }
 
 /*==== Prepair 3.1 Page code ends ====*/
+/*==== Percept 3.2 Page code starts ====*/
+.condition-nipt.five-carrier-screening {
+  background-image: url(../images/circle-blue-bg.svg);
+  background-color: #f1faff; }
+  .condition-nipt.five-carrier-screening .tabcontent {
+    display: block; }
+    .condition-nipt.five-carrier-screening .tabcontent ul {
+      padding-left: 6rem;
+      /* 767 px*/ }
+      @media (max-width: 768px) {
+        .condition-nipt.five-carrier-screening .tabcontent ul {
+          padding-left: 3rem; } }
+    .condition-nipt.five-carrier-screening .tabcontent li {
+      font-family: "Montserrat Regular", sans-serif;
+      margin: 1.2rem 0;
+      line-height: 140%; }
+    .condition-nipt.five-carrier-screening .tabcontent p {
+      margin-bottom: 2.4rem; }
+  .condition-nipt.five-carrier-screening .accordion {
+    margin-top: 3.2rem; }
+  .condition-nipt.five-carrier-screening .accordion-content {
+    padding: 2.4rem; }
+    .condition-nipt.five-carrier-screening .accordion-content p {
+      margin: 0 !important; }
+
+.percept-tell.career-screening-tell.five-carrier-screening {
+  background: #ffffff; }
+  .percept-tell.career-screening-tell.five-carrier-screening p {
+    margin-bottom: 2.4rem; }
+  .percept-tell.career-screening-tell.five-carrier-screening .button-primary {
+    margin: 0 0 2.4rem; }
+  .percept-tell.career-screening-tell.five-carrier-screening .flex {
+    align-items: stretch; }
+  .percept-tell.career-screening-tell.five-carrier-screening .accordion:last-of-type {
+    margin-bottom: 8rem;
+    /* 991 px*/ }
+    @media (max-width: 992px) {
+      .percept-tell.career-screening-tell.five-carrier-screening .accordion:last-of-type {
+        margin-bottom: 4rem; } }
+
+.nipt-right.carrier-screening-option {
+  background-image: url(../images/nipt-right-bg.svg);
+  background-color: #ffffff;
+  padding-top: 0; }
+  .nipt-right.carrier-screening-option .tabcontent {
+    display: block;
+    box-shadow: 0 0 1.3rem #d0dbe8; }
+  .nipt-right.carrier-screening-option .button-primary {
+    margin: 3.2rem 0 0.8rem; }
+  .nipt-right.carrier-screening-option .accordion {
+    margin-top: 3.2rem; }
+  .nipt-right.carrier-screening-option .accordion-content {
+    padding: 2.4rem; }
+    .nipt-right.carrier-screening-option .accordion-content p {
+      margin: 0 !important; }
+    .nipt-right.carrier-screening-option .accordion-content.border-custom {
+      padding: 0;
+      border: none; }
+      .nipt-right.carrier-screening-option .accordion-content.border-custom .flex {
+        border-color: #72c6ff;
+        border-top: none;
+        border-right: none;
+        margin-top: 0; }
+        .nipt-right.carrier-screening-option .accordion-content.border-custom .flex .inner-content {
+          border: none;
+          border-right: 1px solid #72c6ff;
+          /* 767 px*/ }
+          @media (max-width: 768px) {
+            .nipt-right.carrier-screening-option .accordion-content.border-custom .flex .inner-content {
+              border-top: 1px solid #72c6ff; } }
+          .nipt-right.carrier-screening-option .accordion-content.border-custom .flex .inner-content:first-of-type {
+            /* 767 px*/ }
+            @media (max-width: 768px) {
+              .nipt-right.carrier-screening-option .accordion-content.border-custom .flex .inner-content:first-of-type {
+                border-top: none; } }
+    .nipt-right.carrier-screening-option .accordion-content .icon {
+      width: 100%;
+      height: auto;
+      display: flex;
+      margin-top: 3.2rem; }
+      .nipt-right.carrier-screening-option .accordion-content .icon .question-text {
+        font-family: "Montserrat Medium", sans-serif;
+        margin-left: 1.2rem !important; }
+
+.question-contact.percept {
+  background-color: #00538b; }
+
+/*==== Percept 3.2 Page code ends ====*/
 @font-face {
   font-family: Montserrat Regular;
   src: url(../font/Montserrat-Regular.otf); }

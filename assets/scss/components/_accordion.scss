@@ -12,6 +12,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  &.blue {
+    border: 1px solid lighten(color("blue", "base"), 45%);
+    color: color("blue", "base");
+    &::after {
+      color: color("blue", "lighten");
+      background-color: lighten(color("blue", "base"), 68%);
+    }
+  }
   @include breakpoint(small) {
     padding: 1.5rem;
   }
@@ -44,5 +52,9 @@
   p {
     margin-bottom: 2.4rem !important;
     color: color("grey", "lighten-");
+  }
+  &.blue {
+    border: 1px solid lighten(color("blue", "base"), 45%);
+    border-top: 0;
   }
 }
