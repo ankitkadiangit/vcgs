@@ -13,7 +13,7 @@
 .five-carrier-screening {
   background-color: lighten(color("green", "base"), 65%);
   background-image: url(../images/circle-bg.svg);
-  background-size: 100%;
+  background-size: cover;
   padding: 8rem 0;
   margin: 5rem 0 8rem;
   @include breakpoint(medium) {
@@ -43,9 +43,10 @@
     }
   }
   .content {
-    margin-left: 3rem;
+    padding-left: 3rem;
     @include breakpoint(medium) {
       margin: 4rem 0 0;
+      padding-left: 0;
     }
     h3 {
       margin-top: 0;
@@ -378,30 +379,66 @@
   .row {
     display: flex;
     align-items: flex-end;
+    @include breakpoint(x-small) {
+      display: block;
+    }
   }
   .inner-content {
     margin: 14.6rem 0;
+    @include breakpoint(medium) {
+      margin: 4rem 0;
+    }
   }
 }
 
 .carrier-screening-option {
-  .tab button {
-    padding: 1.6rem 3.2rem;
-    background-color: lighten(color("green", "base"), 62%);
-    img {
-      max-width: 21.7rem;
+  @include breakpoint(medium) {
+    padding-top: 4rem;
+  }
+  .tab {
+    @include breakpoint(medium) {
+      display: flex;
     }
-    &.active {
-      background-color: color("shades", "white");
+    button {
+      padding: 1.6rem 3.2rem;
+      background-color: lighten(color("green", "base"), 62%);
+      width: auto;
+      margin-top: 2.4rem;
+      @include breakpoint(medium) {
+        margin-top: 0rem;
+      }
+      @include breakpoint(small) {
+        width: 11rem;
+        padding: 1.2rem;
+      }
+      &::before,
+      &::after {
+        display: none;
+      }
+      img {
+        max-width: 21.7rem;
+        @include breakpoint(medium) {
+          max-width: 100%;
+        }
+      }
+      &.active {
+        background-color: color("shades", "white");
+      }
     }
   }
   .tabcontent {
     background-color: color("shades", "white");
     padding: 2.4rem 3.2rem;
+    @include breakpoint(medium) {
+      padding: 1.5rem;
+    }
     ul {
       list-style-type: disc;
       padding-left: 2rem;
       li {
+        @include breakpoint(small) {
+          padding-left: 0;
+        }
         &::before {
           display: none;
         }
@@ -411,25 +448,66 @@
       padding: 2rem;
       border: 1px solid lighten(color("green", "lighten"), 20%);
       flex: 0 0 calc(100% / 3);
+      .icon {
+        width: 5.6rem;
+        height: 5.6rem;
+      }
+      h4 {
+        margin: 2rem 0 0.8rem;
+      }
+      p {
+        margin-bottom: 0;
+      }
     }
     .flex {
       border: 1px solid lighten(color("green", "lighten"), 20%);
       margin-top: 2.4rem;
+      @include breakpoint(small) {
+        display: block;
+      }
     }
   }
 }
 
-.career-screening-tell.five-carrier-screening.percept {
+.career-screening-tell.five-carrier-screening {
   background-image: url(../images/career-bg.svg);
   background-size: cover;
   background-color: color("shades", "transparent");
+  margin: 0;
   padding-top: 0;
-  margin-top: 0;
+  @include breakpoint(large) {
+    padding-top: 8rem;
+  }
+  @include breakpoint(medium) {
+    padding-top: 4rem;
+  }
   h3 {
     color: color("grey", "lighten-1");
+    margin-top: 8rem;
+    @include breakpoint(large) {
+      margin-top: 0;
+    }
+  }
+  .row {
+    align-items: flex-start;
+  }
+  .right-content {
+    padding-left: 4.8rem;
+    @include breakpoint(medium) {
+      padding-left: 0;
+    }
   }
   .flex {
     align-items: center;
+    max-width: 144rem;
+    width: 100%;
+    margin: auto;
+    @include breakpoint(large) {
+      align-items: flex-start;
+    }
+    @include breakpoint(medium) {
+      display: block;
+    }
     & > div {
       flex: 0 0 50%;
       img {
@@ -439,11 +517,71 @@
       }
       &.content {
         padding: 0 6.4rem 0 11rem;
+        @include breakpoint(large) {
+          padding: 0 1.5rem;
+        }
+        @include breakpoint(medium) {
+          margin-top: 0;
+        }
+      }
+      &.image {
+        @include breakpoint(large) {
+          padding: 0 1.5rem;
+        }
+        @include breakpoint(medium) {
+          margin-top: 2.4rem;
+        }
       }
     }
   }
-  ul li:last-child {
-    margin-bottom: 0;
+  ul li {
+    @include breakpoint(large) {
+      padding-left: 3rem;
+    }
+    &::before {
+      @include breakpoint(large) {
+        left: 0;
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .right-for-me {
+    margin-top: 8rem;
+    @include breakpoint(large) {
+      margin-top: 1.6rem;
+    }
+  }
+  p {
+    margin-bottom: 4rem;
+  }
+  .button-primary {
+    margin-top: 2.4rem;
+    @include breakpoint(medium) {
+      margin: 0 0 4rem;
+    }
+  }
+}
+
+.question-contact {
+  background-color: color("green", "base");
+  padding: 8rem 0;
+  @include breakpoint(medium) {
+    padding: 4rem 0;
+  }
+  h2 {
+    color: color("shades", "white");
+    margin-bottom: 5.6rem;
+    @include breakpoint(medium) {
+      margin-bottom: 3.2rem;
+    }
+  }
+  .row {
+    @include breakpoint(medium) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
   }
 }
 /*==== Prepair 3.1 Page code ends ====*/

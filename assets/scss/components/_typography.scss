@@ -50,6 +50,9 @@ p {
 
 .body-large {
   font-size: $body-large !important;
+  @include breakpoint(small) {
+    font-size: $body-medium !important;
+  }
 }
 
 .body-large-medium {

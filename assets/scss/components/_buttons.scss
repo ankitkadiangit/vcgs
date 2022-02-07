@@ -9,6 +9,10 @@
   &.green {
     background-color: color("green", "base");
   }
+  &.white {
+    background-color: color("shades", "white");
+    color: color("grey", "lighten-1");
+  }
   @include breakpoint(x-small) {
     padding: $small-button-padding;
   }
