@@ -1,376 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Percept</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="assets/css/style.css" rel="stylesheet">
-</head>
-<body>
-
-  <nav class="topnav" id="headerNav">
-    <div class="container">
-      <div class="inner-content">
-      <div class="logo">
-          <img src="assets/images/logo.svg" alt="VCGS">
-      </div>
-      <div class="nav-links">
-        <ul>
-          <li class="dropdown">
-            <a href="#">
-            Products
-          </a>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+  <head>
+    <title>Percept</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="topnav" id="headerNav">
+      <div class="container">
+        <div class="inner-content">
+          <div class="logo">
+            <img src="assets/images/logo.svg" alt="VCGS">
           </div>
-        </li>
-          <li><a href="#">Find a blood collection site</a></li>
-          <li class="mr-0"><a href="#">Talk to us</a></li>
-        </ul>
+          <div class="nav-links">
+            <ul>
+              <li class="dropdown">
+                <a href="#">
+                Products
+                </a>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </li>
+              <li><a href="#">Find a blood collection site</a></li>
+              <li class="mr-0"><a href="#">Talk to us</a></li>
+            </ul>
+          </div>
+          <div class="flex">
+            <a href="#" class="button-primary">
+            Ready to order
+            </a>
+            <a href="javascript:void(0);" class="menu-icon" onclick="menuMobile()">
+            <img src="assets/images/menu.svg" alt="">
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="flex">
-      <a href="#" class="button-primary">
-          Ready to order
-      </a>
-      <a href="javascript:void(0);" class="menu-icon" onclick="menuMobile()">
-        <img src="assets/images/menu.svg" alt="">
-      </a>
-    </div>
-    </div>
-    </div>
-  </nav>
-
-<section class="intro">
-  <div class="container">
-    <div class="inner-content">
-    <p class="pre-heading blue base-text">
-        Percept NIPT
-    </p>
-    <h1 class="mt-0">
-        Helping you make informed choices about 
-        your pregnancy
-    </h1>
-    <p class="body-large-medium">
-        percept™ is a non-invasive prenatal test (NIPT) that estimates the chance your pregnancy may be affected with a chromosome condition, such as Down syndrome.
-    </p>
-  </div>
-  <!-- Tab links -->
-<div class="tab">
-  <button class="tablinks" onclick="openService(event, 'Pre')" id="defaultOpen">
-    <div class="tab-inner">
-      <div class="image">
-        <img src="assets/images/pre-pregnancy.svg" alt="">
-      </div>
-      <div class="content">
-  <span class="small-cap green base-text">Pre-Pregnancy</span>
-  <h4>Carrier Screening</h4>
-</div>
-</div>
-  </button>
-  <button class="tablinks" onclick="openService(event, 'Trimaster')">
-    <div class="tab-inner">
-    <div class="image">
-      <img src="assets/images/first-trimaster.svg" alt="">
-    </div>
-    <div class="content">
-  <span class="small-cap blue lighten-text">First Trimaster</span>
-  <h4>Prenantal Screening</h4>
-  </div>
-    </div>
-  </button>
-  <button class="tablinks" onclick="openService(event, 'Bloodspot')">
-    <div class="tab-inner">
-    <div class="image">
-      <img src="assets/images/new-born.svg" alt="">
-    </div>
-    <div class="content">
-  <span class="small-cap purple base-text">New Born</span>
-  <h4>Bloodspot screening test</h4>
-  </div>
-  </div>
-  </button>
-</div>
-
-<!-- Tab content -->
-<div id="Pre" class="tabcontent">
-  <p class="body-large">
-    Genetic carrier screening tells you about your chance of having a child with an inherited genetic condition. 
-    </p>
-<p class="body-large">
-    If you have a high chance, you can consider options like IVF and donor egg/sperm.
-  </p>
-  <p class="body-large">
-    Carrier screening is relevant to everyone planning a pregnancy.
-  </p>
-</div>
-
-<div id="Trimaster" class="tabcontent">
-  <p class="body-large">
-    If you have a high chance, you can consider options like IVF and donor egg/sperm.
-  </p>
-  <p class="body-large">
-    Carrier screening is relevant to everyone planning a pregnancy.
-  </p>
-</div>
-
-<div id="Bloodspot" class="tabcontent">
-  <p class="body-large">
-    Genetic carrier screening tells you about your chance of having a child with an inherited genetic condition. 
-    </p>
-</div>
-</div>
-</section>
-
-<section class="five-carrier-screening percept">
-  <div class="container">
-    <div class="row">
-      <div class="col l6">
-          <img src="https://via.placeholder.com/560x315" alt="">
-      </div>
-      <div class="col l6">
-        <div class="content">
-        <h3 class="blue base-text">
-            5 things to know about percept NIPT
-        </h3>
-        <ul>
-          <li>
-            Percept NIPT is a screening test that can tell you the chance your pregnancy may have a chromosome condition.
-          </li>
-          <li>
-            Percept NIPT gives high chance or low chance results. Most women/couples receive a low chance result.
-          </li>
-          <li>
-            Some women/couples receive a high chance result. In this case, you will be offered further testing to confirm the result.
-          </li>
-          <li>
-            As with all screening tests, there can be incorrect results. This is why all high chance results should be confirmed with further testing.
-          </li>
-          <li>
-            Percept NIPT does not look for all possible genetic or chromosome conditions.
-          </li>
-        </ul>
-      </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="choose-test percept text-center">
-  <div class="container">
-    <p class="pre-heading blue base-text">
-        Pricing    </p>
-    <h2 class="mt-0">
-        Percept NIPT looks at a wider range of chromosome conditions.
-    </h2>
-    <div class="row">
-      <div class="col l6 push-l3">
-        <div class="content">
-          <div class="test-header">
-            <div class="image">
-              <img src="assets/images/percept-nipt-big.png" alt="">
+    </nav>
+    <section class="intro">
+      <div class="container">
+        <div class="inner-content">
+          <p class="pre-heading blue base-text">
+            Percept NIPT
+          </p>
+          <h1 class="mt-0">
+            Helping you make informed choices about 
+            your pregnancy
+          </h1>
+          <p class="body-large-medium">
+            percept™ is a non-invasive prenatal test (NIPT) that estimates the chance your pregnancy may be affected with a chromosome condition, such as Down syndrome.
+          </p>
+        </div>
+        <!-- Tab links -->
+        <div class="tab">
+          <button class="tablinks" onclick="openService(event, 'Pre')" id="defaultOpen">
+            <div class="tab-inner">
+              <div class="image">
+                <img src="assets/images/pre-pregnancy.svg" alt="">
+              </div>
+              <div class="content">
+                <span class="small-cap green base-text">Pre-Pregnancy</span>
+                <h4>Carrier Screening</h4>
+              </div>
             </div>
-            <p class="mb-0">
-                Suitable for any couple, even if there is no family history of the three conditions
-            </p>
+          </button>
+          <button class="tablinks" onclick="openService(event, 'Trimaster')">
+            <div class="tab-inner">
+              <div class="image">
+                <img src="assets/images/first-trimaster.svg" alt="">
+              </div>
+              <div class="content">
+                <span class="small-cap blue lighten-text">First Trimaster</span>
+                <h4>Prenantal Screening</h4>
+              </div>
+            </div>
+          </button>
+          <button class="tablinks" onclick="openService(event, 'Bloodspot')">
+            <div class="tab-inner">
+              <div class="image">
+                <img src="assets/images/new-born.svg" alt="">
+              </div>
+              <div class="content">
+                <span class="small-cap purple base-text">New Born</span>
+                <h4>Bloodspot screening test</h4>
+              </div>
+            </div>
+          </button>
+        </div>
+        <!-- Tab content -->
+        <div id="Pre" class="tabcontent">
+          <p class="body-large">
+            Genetic carrier screening tells you about your chance of having a child with an inherited genetic condition. 
+          </p>
+          <p class="body-large">
+            If you have a high chance, you can consider options like IVF and donor egg/sperm.
+          </p>
+          <p class="body-large">
+            Carrier screening is relevant to everyone planning a pregnancy.
+          </p>
+        </div>
+        <div id="Trimaster" class="tabcontent">
+          <p class="body-large">
+            If you have a high chance, you can consider options like IVF and donor egg/sperm.
+          </p>
+          <p class="body-large">
+            Carrier screening is relevant to everyone planning a pregnancy.
+          </p>
+        </div>
+        <div id="Bloodspot" class="tabcontent">
+          <p class="body-large">
+            Genetic carrier screening tells you about your chance of having a child with an inherited genetic condition. 
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="five-carrier-screening percept">
+      <div class="container">
+        <div class="row">
+          <div class="col l6">
+            <img src="https://via.placeholder.com/560x315" alt="">
           </div>
-          <div class="test-body">
-            <ul class="no-padding">
-           <li>
-                <span class="icon">
-                  <img src="assets/images/time-1.svg" alt="">
-                </span>
-                <span class="data">
-                  <p class="small-cap">
-                    Time
+          <div class="col l6">
+            <div class="content">
+              <h3 class="blue base-text">
+                5 things to know about percept NIPT
+              </h3>
+              <ul>
+                <li>
+                  Percept NIPT is a screening test that can tell you the chance your pregnancy may have a chromosome condition.
+                </li>
+                <li>
+                  Percept NIPT gives high chance or low chance results. Most women/couples receive a low chance result.
+                </li>
+                <li>
+                  Some women/couples receive a high chance result. In this case, you will be offered further testing to confirm the result.
+                </li>
+                <li>
+                  As with all screening tests, there can be incorrect results. This is why all high chance results should be confirmed with further testing.
+                </li>
+                <li>
+                  Percept NIPT does not look for all possible genetic or chromosome conditions.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="choose-test percept text-center">
+      <div class="container">
+        <p class="pre-heading blue base-text">
+          Pricing    
+        </p>
+        <h2 class="mt-0">
+          Percept NIPT looks at a wider range of chromosome conditions.
+        </h2>
+        <div class="row">
+          <div class="col l6 push-l3">
+            <div class="content">
+              <div class="test-header">
+                <div class="image">
+                  <img src="assets/images/percept-nipt-big.png" alt="">
+                </div>
+                <p class="mb-0">
+                  Suitable for any couple, even if there is no family history of the three conditions
+                </p>
+              </div>
+              <div class="test-body">
+                <ul class="no-padding">
+                  <li>
+                    <span class="icon">
+                    <img src="assets/images/time-1.svg" alt="">
+                    </span>
+                    <span class="data">
+                      <p class="small-cap">
+                        Time
+                      </p>
+                      <p><span class="text-medium">3-5</span> working days from sample receipt in laboratory
+                      </p>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="icon">
+                    <img src="assets/images/cost-1.svg" alt="">
+                    </span>
+                    <span class="data">
+                      <p class="small-cap">
+                        Money
+                      </p>
+                      <p>Money
+                        <span class="text-medium">AUD$449</span> in New Zealand and Australia
+                      </p>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="icon">
+                    <img src="assets/images/sample-collected-time.svg" alt="">
+                    </span>
+                    <span class="data">
+                      <p class="small-cap">
+                        Sample collected time 
+                      </p>
+                      <p>
+                        Sample collected before <span class="text-medium">10 weeks</span> in pregnancy
+                      </p>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="arrange-testing percept">
+      <div class="container">
+        <h2 class="text-center">How to arrange testing through VCGS</h2>
+        <div class="row">
+          <div class="col l6">
+            <div class="step">
+              <div class="icon">
+                <img src="assets/images/step-1-1.svg" alt="">
+              </div>
+              <div class="content">
+                <p class="small-cap blue base-text mt-0">
+                  Step 1
+                </p>
+                <h4 class="no-margin">Talk to your doctor about percept NIPT. </h4>
+                <p class="mb-0">
+                  If appropriate, they will complete a test request form.
+                </p>
+                <a href="#">Download a test request form to take to your doctor
+                <img src="assets/images/arrow-down.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col l6 push-l6">
+            <div class="inner-content">
+              <div class="step">
+                <div class="icon">
+                  <img src="assets/images/step-2-1.svg" alt="">
+                </div>
+                <div class="content">
+                  <p class="small-cap blue base-text mt-0">
+                    Step 2
                   </p>
-                  <p><span class="text-medium">3-5</span> working days from sample receipt in laboratory
+                  <h4 class="no-margin">Have your blood taken after 10 weeks. </h4>
+                  <p class="mb-0">
+                    You can find a blood collection centre on our website.  
                   </p>
-                </span>
+                  <a href="#">Find a blood collection site
+                  <img src="assets/images/arrow-down.svg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col l6">
+            <div class="step">
+              <div class="icon">
+                <img src="assets/images/step-3-1.svg" alt="">
+              </div>
+              <div class="content">
+                <p class="small-cap blue base-text mt-0">
+                  Step 3
+                </p>
+                <h4 class="no-margin">
+                  Most results will be available from your doctor within 3-5 working days from the time the lab receives your sample.
+                </h4>
+                <p class="mb-0">
+                  VCGS cannot give test results to you directly.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="link-button">
+          <a href="#">
+          View our pre-test percept NIPT guide
+          <img src="assets/images/arrow-down.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col m4">
+            <div class="logo-images">
+              <a href="#">
+              <img class="no-margin" src="assets/images/footer-logo.svg" alt="">
+              </a>
+              <br>
+              <a href="#">
+              <img src="assets/images/percept-nipt.svg" alt="">
+              </a>
+              <a href="#">
+              <img src="assets/images/percept-gcs.svg" alt="">
+              </a>
+              <a href="#">
+              <img src="assets/images/percept-plus2.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col m2 push-m1">
+            <p class="pre-heading">
+              Featured Tests
+            </p>
+            <ul>
+              <li><a href="#">Percept</a></li>
+              <li><a href="#">Prepair</a></li>
+              <li><a href="#">MSS</a></li>
+              <li><a href="#">NBS</a></li>
+              <li><a href="#">Genomic Sequencing</a></li>
+              <li><a href="#">Microarray</a></li>
+            </ul>
+          </div>
+          <div class="col m2 push-m1">
+            <p class="pre-heading">
+              VCGS
+            </p>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Meet Our Team</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Donate</a></li>
+              <li><a href="#">Feedback</a></li>
+            </ul>
+          </div>
+          <div class="col m2 push-m1">
+            <p class="pre-heading">
+              Legal
+            </p>
+            <ul>
+              <li><a href="#">Rights</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Condtions</a></li>
+            </ul>
+            <p class="pre-heading">
+              Social
+            </p>
+            <ul class="social-links">
+              <li><a href="#">
+                <img src="assets/images/facebook.svg" alt="">
+                </a>
               </li>
-              <li>
-                <span class="icon">
-                  <img src="assets/images/cost-1.svg" alt="">
-                </span>
-                <span class="data">
-                  <p class="small-cap">
-                    Money
-                  </p>
-                  <p>Money
-                    <span class="text-medium">AUD$449</span> in New Zealand and Australia
-                  </p>
-                </span>
-              </li>
-              <li>
-                <span class="icon">
-                  <img src="assets/images/sample-collected-time.svg" alt="">
-                </span>
-                <span class="data">
-                  <p class="small-cap">
-                    Sample collected time 
-                  </p>
-                  <p>
-                    Sample collected before <span class="text-medium">10 weeks</span> in pregnancy
-                  </p>
-                </span>
+              <li><a href="#">
+                <img src="assets/images/youtube.svg" alt="">
+                </a>
               </li>
             </ul>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="arrange-testing percept">
-  <div class="container">
-    <h2 class="text-center">How to arrange testing through VCGS</h2>
-    <div class="row">
-      <div class="col l6">
-        <div class="step">
-          <div class="icon">
-            <img src="assets/images/step-1-1.svg" alt="">
-          </div>
-          <div class="content">
-            <p class="small-cap blue base-text mt-0">
-              Step 1
-            </p>
-            <h4 class="no-margin">Talk to your doctor about percept NIPT. </h4>
-            <p class="mb-0">
-                If appropriate, they will complete a test request form.
-            </p>
-            <a href="#">Download a test request form to take to your doctor
-                <img src="assets/images/arrow-down.svg" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l6 push-l6">
-        <div class="inner-content">
-        <div class="step">
-          <div class="icon">
-            <img src="assets/images/step-2-1.svg" alt="">
-          </div>
-          <div class="content">
-            <p class="small-cap blue base-text mt-0">
-              Step 2
-            </p>
-            <h4 class="no-margin">Have your blood taken after 10 weeks. </h4>
-            <p class="mb-0">
-                You can find a blood collection centre on our website.  
-            </p>
-            <a href="#">Find a blood collection site
-                <img src="assets/images/arrow-down.svg" alt="">
-            </a>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l6">
-        <div class="step">
-          <div class="icon">
-            <img src="assets/images/step-3-1.svg" alt="">
-          </div>
-          <div class="content">
-            <p class="small-cap blue base-text mt-0">
-              Step 3
-            </p>
-            <h4 class="no-margin">
-                Most results will be available from your doctor within 3-5 working days from the time the lab receives your sample.
-            </h4>
-            <p class="mb-0">
-                VCGS cannot give test results to you directly.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="link-button">
-      <a href="#">
-        View our pre-test percept NIPT guide
-        <img src="assets/images/arrow-down.svg" alt="">
-      </a>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col m4">
-        <div class="logo-images">
-          <a href="#">
-          <img class="no-margin" src="assets/images/footer-logo.svg" alt="">
-          </a>
-          <br>
-          <a href="#">
-          <img src="assets/images/percept-nipt.svg" alt="">
-          </a>
-          <a href="#">
-          <img src="assets/images/percept-gcs.svg" alt="">
-          </a>
-          <a href="#">
-          <img src="assets/images/percept-plus2.svg" alt="">
-          </a>
-        </div>
-      </div>
-      <div class="col m2 push-m1">
-        <p class="pre-heading">
-          Featured Tests
-        </p>
-        <ul>
-          <li><a href="#">Percept</a></li>
-          <li><a href="#">Prepair</a></li>
-          <li><a href="#">MSS</a></li>
-          <li><a href="#">NBS</a></li>
-          <li><a href="#">Genomic Sequencing</a></li>
-          <li><a href="#">Microarray</a></li>
-        </ul>
-      </div>
-      <div class="col m2 push-m1">
-        <p class="pre-heading">
-          VCGS
-        </p>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Meet Our Team</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Donate</a></li>
-          <li><a href="#">Feedback</a></li>
-        </ul>
-      </div>
-      <div class="col m2 push-m1">
-        <p class="pre-heading">
-          Legal
-        </p>
-        <ul>
-          <li><a href="#">Rights</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms & Condtions</a></li>
-        </ul>
-        <p class="pre-heading">
-          Social
-        </p>
-        <ul class="social-links">
-          <li><a href="#">
-            <img src="assets/images/facebook.svg" alt="">
-          </a></li>
-          <li><a href="#">
-            <img src="assets/images/youtube.svg" alt="">
-          </a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/custom.js"></script>
-</body>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
 </html>
