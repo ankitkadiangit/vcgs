@@ -831,8 +831,7 @@ footer {
     background-image: url(../images/circle-bg-1.svg); }
   .five-carrier-screening iframe {
     max-width: 56rem !important;
-    width: 100%;
-    height: 31.5rem; }
+    width: 100%; }
   .five-carrier-screening .button-link {
     margin-top: 1.6rem; }
     .five-carrier-screening .button-link img {
@@ -1360,11 +1359,10 @@ footer {
     margin: 0 0 2.4rem; }
   .percept-tell.career-screening-tell.five-carrier-screening .flex {
     align-items: stretch; }
-  .percept-tell.career-screening-tell.five-carrier-screening .accordion:last-of-type {
-    margin-bottom: 8rem;
+  .percept-tell.career-screening-tell.five-carrier-screening .accordion-outer {
     /* 991 px*/ }
     @media (max-width: 992px) {
-      .percept-tell.career-screening-tell.five-carrier-screening .accordion:last-of-type {
+      .percept-tell.career-screening-tell.five-carrier-screening .accordion-outer {
         margin-bottom: 4rem; } }
 
 .nipt-right.carrier-screening-option {

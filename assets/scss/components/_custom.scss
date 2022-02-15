@@ -27,7 +27,6 @@
   iframe {
     max-width: 56rem !important;
     width: 100%;
-    height: 31.5rem;
   }
   .button-link {
     margin-top: 1.6rem;
@@ -630,8 +629,7 @@
   .flex {
     align-items: stretch;
   }
-  .accordion:last-of-type {
-    margin-bottom: 8rem;
+  .accordion-outer {
     @include breakpoint(medium) {
       margin-bottom: 4rem;
     }
