@@ -987,7 +987,7 @@ footer {
         .arrange-testing.percept .step a img {
           transform: rotate(-90deg);
           margin-left: 0.4rem; }
-    .arrange-testing.percept .col.m6:last-child .inner-content::before {
+    .arrange-testing.percept .col.l6:last-child .inner-content::before {
       background-image: url(../images/person.svg);
       width: 10.8rem;
       height: 42.3rem;
@@ -1038,7 +1038,7 @@ footer {
             .arrange-testing .tab-section .col .inner-content .step {
               display: block;
               margin-top: 0; } }
-  .arrange-testing .col.m6:last-child .inner-content::before {
+  .arrange-testing .col.l6:last-child .inner-content::before {
     position: absolute;
     height: 41.3rem;
     width: 22.7rem;
@@ -1050,9 +1050,9 @@ footer {
     top: -41.3rem;
     /* 1024 px*/ }
     @media (max-width: 1200px) {
-      .arrange-testing .col.m6:last-child .inner-content::before {
+      .arrange-testing .col.l6:last-child .inner-content::before {
         display: none; } }
-  .arrange-testing .col.m6:last-child .inner-content .button-primary.green {
+  .arrange-testing .col.l6:last-child .inner-content .button-primary.green {
     position: absolute;
     right: auto;
     left: 0;
