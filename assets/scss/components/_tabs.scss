@@ -1,5 +1,6 @@
 .tab {
   display: flex;
+  justify-content: center;
   @include breakpoint(medium) {
     display: block;
   }
@@ -10,7 +11,8 @@
     cursor: pointer;
     padding: 2.4rem;
     transition: 0.3s;
-    width: calc(100% / 3);
+    max-width: 47.8rem;
+    width: 100%;
     @include breakpoint(medium) {
       width: 100%;
     }
@@ -28,26 +30,15 @@
           width: 4px;
         }
       }
-      &::before {
-        position: absolute;
-        content: "";
-        left: 0;
-        width: 100%;
-        height: 1.6rem;
-        top: -1.6rem;
-        @include breakpoint(medium) {
-          display: none;
-        }
-      }
       &:nth-child(1) {
         .image {
-          background-color: color("green", "base");
+          background-color: color("green", "lighten-1");
           img {
             filter: brightness(100);
           }
         }
         &::after {
-          background-color: color("green", "base");
+          background-color: color("green", "lighten-1");
         }
       }
       &:nth-child(2) {
@@ -100,6 +91,7 @@
     .tab-inner {
       display: flex;
       align-items: center;
+      justify-content: center;
       .image {
         margin-right: 1.2rem;
         height: 5.6rem;

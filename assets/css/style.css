@@ -655,6 +655,7 @@ textarea {
 
 .tab {
   display: flex;
+  justify-content: center;
   /* 991 px*/
   /* Style the buttons inside the tab */ }
   @media (max-width: 992px) {
@@ -666,7 +667,8 @@ textarea {
     cursor: pointer;
     padding: 2.4rem;
     transition: 0.3s;
-    width: calc(100% / 3);
+    max-width: 47.8rem;
+    width: 100%;
     /* 991 px*/ }
     @media (max-width: 992px) {
       .tab button {
@@ -685,23 +687,12 @@ textarea {
           .tab button.active::after {
             height: 100%;
             width: 4px; } }
-      .tab button.active::before {
-        position: absolute;
-        content: "";
-        left: 0;
-        width: 100%;
-        height: 1.6rem;
-        top: -1.6rem;
-        /* 991 px*/ }
-        @media (max-width: 992px) {
-          .tab button.active::before {
-            display: none; } }
       .tab button.active:nth-child(1) .image {
-        background-color: #15803d; }
+        background-color: #16a34a; }
         .tab button.active:nth-child(1) .image img {
           filter: brightness(100); }
       .tab button.active:nth-child(1)::after {
-        background-color: #15803d; }
+        background-color: #16a34a; }
       .tab button.active:nth-child(2) .image {
         background-color: #0369a1; }
         .tab button.active:nth-child(2) .image img {
@@ -728,7 +719,8 @@ textarea {
       background-color: #f2eefa; }
     .tab button .tab-inner {
       display: flex;
-      align-items: center; }
+      align-items: center;
+      justify-content: center; }
       .tab button .tab-inner .image {
         margin-right: 1.2rem;
         height: 5.6rem;
@@ -816,7 +808,6 @@ footer {
       padding: 4rem 0 2rem; } }
 
 .five-carrier-screening {
-  background-color: #e6fbee;
   background-image: url(../images/circle-bg.svg);
   background-size: cover;
   padding: 8rem 0;
