@@ -120,7 +120,7 @@
     }
   }
   .content {
-    border: 1px solid color("green", "lighten");
+    border: 1px solid color("green", "lighten-2");
     margin-top: 4.8rem;
     @include breakpoint(medium) {
       margin-top: 0;
@@ -133,7 +133,7 @@
     }
     .test-header {
       text-align: left;
-      background-color: lighten(color("green", "lighten"), 48%);
+      background-color: lighten(color("green", "lighten-2"), 48%);
       padding: 2rem;
       height: 21.4rem;
       @include breakpoint(medium) {
@@ -332,7 +332,7 @@
     margin: 2.4rem 0;
     padding: 2rem;
     background-color: color("shades", "white");
-    border: 1px solid color("green", "lighten");
+    border: 1px solid color("green", "lighten-2");
     .icon {
       margin-right: 2rem;
       flex: 0 0 5.4rem;
@@ -445,7 +445,7 @@
     }
     .inner-content {
       padding: 2rem;
-      border: 1px solid lighten(color("green", "lighten"), 20%);
+      border: 1px solid lighten(color("green", "lighten-2"), 20%);
       flex: 0 0 calc(100% / 3);
       .icon {
         width: 5.6rem;
@@ -459,7 +459,7 @@
       }
     }
     .flex {
-      border: 1px solid lighten(color("green", "lighten"), 20%);
+      border: 1px solid lighten(color("green", "lighten-2"), 20%);
       margin-top: 2.4rem;
       @include breakpoint(small) {
         display: block;
