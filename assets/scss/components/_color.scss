@@ -10,6 +10,7 @@ $blue: (
 
 $green: (
   "base": #15803d,
+  "darken": #14532d,
   "lighten-1": #16a34a,
   "lighten-2": #40ae49,
 );
@@ -114,6 +115,9 @@ $colors: (
   }
   &.base-bg {
     background-color: color("green", "base");
+  }
+  &.dark-text {
+    color: color("green", "darken");
   }
 }
 .purple {

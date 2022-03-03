@@ -53,6 +53,15 @@
   ul {
     list-style-type: none;
     padding: 0;
+    &.normal-list {
+      list-style-type: disc;
+      padding: 0 1.6rem;
+      li {
+        &:before {
+          display: none;
+        }
+      }
+    }
     li {
       font-size: $body-medium;
       font-family: $font-regular;
@@ -300,7 +309,7 @@
         position: absolute;
         right: auto;
         left: 0;
-        top: -4.3rem;
+        top: -4.2rem;
       }
     }
   }
@@ -316,7 +325,7 @@
     .button-primary.green {
       position: absolute;
       right: 0;
-      top: -4.3rem;
+      top: -4.2rem;
       &#prepair-plus-step {
         right: auto;
         left: 0;
@@ -361,11 +370,42 @@
       margin: 0 2rem;
       @include breakpoint(small) {
         margin: 0;
-        display: block;
+        display: flex;
         text-align: center;
+        justify-content: center;
         margin-bottom: 2rem;
       }
     }
+  }
+}
+
+.did-you-know {
+  padding: 8rem 0;
+  .background {
+    padding: 3.2rem;
+    background-color: lighten(color("green", "base"), 68%);
+    .row {
+      display: flex;
+      .col {
+        display: table;
+      }
+    }
+    .inner-content {
+      display: table-cell;
+      background-color: color("shades", "white");
+      padding: 2.4rem;
+      border: 1px solid lighten(color("green", "lighten-2"), 30%);
+      text-align: center;
+      .image {
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  .italic {
+    margin-top: 3.2rem;
   }
 }
 
@@ -400,7 +440,7 @@
     }
     button {
       padding: 1.6rem 3.2rem;
-      background-color: lighten(color("green", "base"), 62%);
+      background-color: lighten(color("green", "base"), 66%);
       width: auto;
       margin-top: 2.4rem;
       @include breakpoint(medium) {
@@ -537,6 +577,14 @@
         }
         @include breakpoint(medium) {
           margin-top: 2.4rem;
+        }
+        &.right {
+          padding: 4.8rem 0;
+          img {
+            object-fit: contain;
+            width: auto;
+            height: auto;
+          }
         }
       }
     }

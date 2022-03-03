@@ -29,4 +29,10 @@
   &:hover {
     color: color("blue", "base");
   }
+  &.icon-right {
+    img {
+      margin-left: 0.4rem;
+      transform: rotate(-90deg);
+    }
+  }
 }

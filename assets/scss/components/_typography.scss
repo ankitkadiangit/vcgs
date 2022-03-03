@@ -3,6 +3,10 @@
   src: url(../font/Montserrat-Regular.otf);
 }
 @font-face {
+  font-family: Montserrat Italic;
+  src: url(../font/Montserrat-Italic.ttf);
+}
+@font-face {
   font-family: Montserrat Medium;
   src: url(../font/Montserrat-Medium.otf);
 }
@@ -23,9 +27,15 @@ h6 {
   font-family: $font-semibold;
   color: color("grey", "lighten-1");
   font-weight: 500;
+  &.font-medium {
+    font-family: $font-medium;
+  }
 }
 p {
   font-family: $font-regular;
+}
+.italic {
+  font-family: $font-italic;
 }
 .pre-heading {
   font-size: $body-medium;
@@ -63,6 +73,10 @@ p {
   @include breakpoint(small) {
     font-size: $body-medium;
   }
+}
+
+.body-small {
+  font-size: $body-small;
 }
 
 // Header Styles

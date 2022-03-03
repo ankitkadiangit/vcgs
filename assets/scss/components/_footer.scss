@@ -27,6 +27,9 @@ footer {
     padding: 0;
     li {
       line-height: 2;
+      a {
+        text-decoration: none;
+      }
     }
     &.social-links {
       li {
