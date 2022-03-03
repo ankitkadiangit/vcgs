@@ -487,9 +487,15 @@ textarea {
   .floating-bottom-bar .inner-content {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    /* 767 px*/ }
+    @media (max-width: 768px) {
+      .floating-bottom-bar .inner-content {
+        flex-direction: column;
+        align-items: flex-start; } }
     .floating-bottom-bar .inner-content p {
-      font-family: "Montserrat Medium", sans-serif; }
+      font-family: "Montserrat Medium", sans-serif;
+      flex: 0 0 calc(100% - 31rem); }
     .floating-bottom-bar .inner-content button {
       margin-left: 1.2rem; }
 

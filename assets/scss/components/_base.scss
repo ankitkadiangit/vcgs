@@ -111,8 +111,13 @@ textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include breakpoint(small) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
     p {
       font-family: $font-medium;
+      flex: 0 0 calc(100% - 31rem);
     }
     button {
       margin-left: 1.2rem;
