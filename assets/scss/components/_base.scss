@@ -96,3 +96,26 @@ textarea {
   padding: 2rem !important;
   color: color("grey", "lighten-2") !important;
 }
+
+.floating-bottom-bar {
+  padding: 0.6rem 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: auto;
+  background-color: color("shades", "white");
+  z-index: 9;
+  .inner-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      font-family: $font-medium;
+    }
+    button {
+      margin-left: 1.2rem;
+    }
+  }
+}

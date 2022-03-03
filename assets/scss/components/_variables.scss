@@ -8,26 +8,17 @@
 //  2. Badges
 //  3. Buttons
 //  4. Cards
-//  5. Carousel
-//  6. Collapsible
-//  7. Chips
-//  8. Date + Time Picker
-//  9. Dropdown
-//  10. Forms
-//  11. Global
-//  12. Grid
-//  13. Navigation Bar
-//  14. Side Navigation
-//  15. Photo Slider
-//  16. Spinners | Loaders
-//  17. Tabs
-//  18. Tables
-//  19. Toasts
-//  20. Typography
-//  21. Footer
-//  22. Flow Text
-//  23. Collections
-//  24. Progress Bar
+//  5. Collapsible
+//  6. Forms
+//  7. Global
+//  8. Grid
+//  9. Navigation Bar
+//  10. Spinners | Loaders
+//  11. Tabs
+//  12. Tables
+//  13. Toasts
+//  14. Typography
+//  15. Footer
 
 // 1. Colors
 // ==========================================================================
@@ -101,7 +92,7 @@ $card-bg-color: #fff !default;
 $card-link-color: color("orange", "base") !default;
 $card-link-color-light: lighten($card-link-color, 20%) !default;
 
-// 6. Collapsible
+// 5. Collapsible
 // ==========================================================================
 
 $collapsible-height: 3rem !default;
@@ -109,7 +100,7 @@ $collapsible-line-height: $collapsible-height !default;
 $collapsible-header-color: #fff !default;
 $collapsible-border-color: #ddd !default;
 
-// 10. Forms
+// 6. Forms
 // ==========================================================================
 
 // Text Inputs + Textarea
@@ -163,7 +154,7 @@ $switch-unchecked-bg: #f1f1f1 !default;
 $switch-unchecked-lever-bg: rgba(0, 0, 0, 0.38) !default;
 $switch-radius: 15px !default;
 
-// 11. Global
+// 7. Global
 // ==========================================================================
 
 // Media Query Ranges
@@ -202,7 +193,7 @@ $small-desktop-down: "only screen and (max-width : #{$large-desktop-down})" !def
 // Max -width 1280
 $large-desktop-down-center: "only screen and (max-width : #{$large-desktop-down})" !default;
 
-// 12. Grid
+// 8. Grid
 // ==========================================================================
 
 $num-cols: 12 !default;
@@ -210,7 +201,7 @@ $gutter-width: 3rem !default;
 $element-top-margin: $gutter-width/3 !default;
 $element-bottom-margin: ($gutter-width * 2)/3 !default;
 
-// 13. Navigation Bar
+// 9. Navigation Bar
 // ==========================================================================
 
 $navbar-height: 42px !default;
@@ -221,32 +212,25 @@ $navbar-font-size: 0.929em !default;
 $navbar-font-color: #ab9ba9 !default;
 $navbar-brand-font-size: 2.1rem !default;
 
-// 15. Photo Slider
-// ==========================================================================
-
-$slider-bg-color: color("grey", "base") !default;
-$slider-bg-color-light: color("grey", "lighten-2") !default;
-$slider-indicator-color: color("green", "base") !default;
-
-// 16. Spinners | Loaders
+// 10. Spinners | Loaders
 // ==========================================================================
 
 $spinner-default-color: $secondary-color !default;
 
-// 17. Tabs
+// 11. Tabs
 // ==========================================================================
 
 $tabs-underline-color: $primary-color-light !default;
 $tabs-text-color: $primary-color !default;
 $tabs-bg-color: #fff !default;
 
-// 18. Tables
+// 12. Tables
 // ==========================================================================
 
 $table-border-color: $border-color !default;
 $table-striped-color: rgba(242, 242, 242, 0.5) !default;
 
-// 19. Toasts
+// 13. Toasts
 // ==========================================================================
 
 $toast-height: 48px !default;
@@ -254,7 +238,7 @@ $toast-color: #323232 !default;
 $toast-text-color: #fff !default;
 $toast-action-color: #eeff41;
 
-// 20. Typography
+// 14. Typography
 // ==========================================================================
 
 $font-regular: "Montserrat Regular", sans-serif;
@@ -274,7 +258,7 @@ $body-medium: 1.6rem !default;
 $body-small: 1.3rem !default;
 $small-cap: 1.3rem !default;
 
-// 21. Footer
+// 15. Footer
 // ==========================================================================
 
 $footer-font-color: #fff !default;

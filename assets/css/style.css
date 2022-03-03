@@ -474,11 +474,30 @@ textarea {
   padding: 2rem !important;
   color: #333b43 !important; }
 
+.floating-bottom-bar {
+  padding: 0.6rem 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: auto;
+  background-color: #ffffff;
+  z-index: 9; }
+  .floating-bottom-bar .inner-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .floating-bottom-bar .inner-content p {
+      font-family: "Montserrat Medium", sans-serif; }
+    .floating-bottom-bar .inner-content button {
+      margin-left: 1.2rem; }
+
 .button-primary {
   padding: 1.25rem 2.4rem;
   background-color: #00538b;
+  border: 1px solid #00538b;
   color: #ffffff;
-  border: none;
   font-size: 1.6rem;
   display: inline-flex;
   align-items: center;
@@ -488,7 +507,8 @@ textarea {
     background-color: #15803d; }
   .button-primary.white {
     background-color: #ffffff;
-    color: #21262c; }
+    color: #21262c;
+    border: 1px solid #9aa7b7; }
   @media (max-width: 576px) {
     .button-primary {
       padding: 1.2rem 1.6rem; } }
