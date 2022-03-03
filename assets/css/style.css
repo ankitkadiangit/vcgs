@@ -392,7 +392,7 @@ a {
   font-family: "Montserrat Medium", sans-serif;
   color: #00538b;
   font-size: 1.6rem;
-  text-decoration: none; }
+  text-decoration: underline; }
 
 p {
   color: #333b43;
@@ -477,6 +477,7 @@ textarea {
   font-size: 1.6rem;
   display: inline-flex;
   align-items: center;
+  text-decoration: none;
   /* 480 px*/ }
   .button-primary.green {
     background-color: #15803d; }
@@ -1137,6 +1138,7 @@ footer {
     .carrier-screening-option {
       padding-top: 4rem; } }
   .carrier-screening-option .tab {
+    justify-content: flex-start;
     /* 991 px*/ }
     @media (max-width: 992px) {
       .carrier-screening-option .tab {
@@ -1184,11 +1186,19 @@ footer {
           display: none; }
     .carrier-screening-option .tabcontent .inner-content {
       padding: 2rem;
-      border: 1px solid #83d189;
+      border: 1px solid #95d89b;
       flex: 0 0 calc(100% / 3); }
       .carrier-screening-option .tabcontent .inner-content .icon {
         width: 5.6rem;
-        height: 5.6rem; }
+        height: 5.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #e0f4e2;
+        border-radius: 50px;
+        font-size: 2rem;
+        color: #40ae49;
+        padding-top: 0.4rem; }
       .carrier-screening-option .tabcontent .inner-content h4 {
         margin: 2rem 0 0.8rem; }
       .carrier-screening-option .tabcontent .inner-content p {

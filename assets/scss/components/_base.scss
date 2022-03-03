@@ -6,7 +6,7 @@ a {
   font-family: $font-medium;
   color: color("blue", "base");
   font-size: $body-medium;
-  text-decoration: none;
+  text-decoration: underline;
 }
 p {
   color: color("grey", "lighten-2");
