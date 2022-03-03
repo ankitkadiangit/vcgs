@@ -574,11 +574,6 @@
     }
     & > div {
       flex: 0 0 50%;
-      img {
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-      }
       &.content {
         padding: 0 6.4rem 0 11rem;
         @include breakpoint(large) {
@@ -597,10 +592,29 @@
         }
         &.right {
           padding: 4.8rem 0;
-          img {
-            object-fit: contain;
-            width: auto;
-            height: auto;
+        }
+      }
+      &.quote-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include breakpoint(medium) {
+          justify-content: flex-start;
+          margin-left: 1.5rem;
+        }
+        .quote-inner {
+          padding: 2.4rem;
+          background-color: lighten(color("blue", "lighten-2"), 49%);
+          max-width: 56rem;
+          margin-top: 25rem;
+          display: flex;
+          box-shadow: 1.6rem 1.6rem 0 lighten(color("blue", "lighten-2"), 45%);
+          @include breakpoint(medium) {
+            margin: 6rem 0;
+          }
+          .quote {
+            flex: 0 0 6.4rem;
+            height: 6.4rem;
           }
         }
       }
@@ -666,7 +680,7 @@
   .tabcontent {
     display: block;
     ul {
-      padding-left: 6rem;
+      padding-left: 4rem;
       @include breakpoint(small) {
         padding-left: 3rem;
       }
@@ -715,7 +729,6 @@
   padding-top: 0;
   .tabcontent {
     display: block;
-    box-shadow: 0 0 1.3rem color("grey", "lighten-5");
   }
   .button-primary {
     margin: 3.2rem 0 0.8rem;
@@ -755,11 +768,16 @@
       height: auto;
       display: flex;
       margin-top: 3.2rem;
+      background-color: transparent;
+      align-items: flex-start;
       .question-text {
         font-family: $font-medium;
         margin-left: 1.2rem !important;
       }
     }
+  }
+  ul li {
+    margin: 0;
   }
 }
 

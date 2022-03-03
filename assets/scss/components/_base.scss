@@ -71,6 +71,10 @@ input:focus {
   @include flexbox;
 }
 
+.shadow {
+  box-shadow: 0 0 1.3rem color("grey", "lighten-5");
+}
+
 input,
 select {
   color: color("grey", "lighten-2") !important;
