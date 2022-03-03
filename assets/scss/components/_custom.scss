@@ -384,10 +384,20 @@
   .background {
     padding: 3.2rem;
     background-color: lighten(color("green", "base"), 68%);
+    @include breakpoint(small) {
+      padding: 1.5rem;
+    }
     .row {
       display: flex;
+      @include breakpoint(small) {
+        display: block;
+      }
       .col {
         display: table;
+        @include breakpoint(small) {
+          display: block;
+          float: none;
+        }
       }
     }
     .inner-content {
@@ -396,6 +406,10 @@
       padding: 2.4rem;
       border: 1px solid lighten(color("green", "lighten-2"), 30%);
       text-align: center;
+      @include breakpoint(small) {
+        display: block;
+        margin: 0.6rem 0;
+      }
       .image {
         height: 10rem;
         display: flex;
@@ -425,6 +439,9 @@
     margin: 14.6rem 0;
     @include breakpoint(medium) {
       margin: 4rem 0;
+    }
+    @include breakpoint(x-small) {
+      text-align: center;
     }
   }
 }

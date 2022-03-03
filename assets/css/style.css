@@ -1138,17 +1138,35 @@ footer {
   padding: 8rem 0; }
   .did-you-know .background {
     padding: 3.2rem;
-    background-color: #f3fdf7; }
+    background-color: #f3fdf7;
+    /* 767 px*/ }
+    @media (max-width: 768px) {
+      .did-you-know .background {
+        padding: 1.5rem; } }
     .did-you-know .background .row {
-      display: flex; }
+      display: flex;
+      /* 767 px*/ }
+      @media (max-width: 768px) {
+        .did-you-know .background .row {
+          display: block; } }
       .did-you-know .background .row .col {
-        display: table; }
+        display: table;
+        /* 767 px*/ }
+        @media (max-width: 768px) {
+          .did-you-know .background .row .col {
+            display: block;
+            float: none; } }
     .did-you-know .background .inner-content {
       display: table-cell;
       background-color: #ffffff;
       padding: 2.4rem;
       border: 1px solid #a8dfad;
-      text-align: center; }
+      text-align: center;
+      /* 767 px*/ }
+      @media (max-width: 768px) {
+        .did-you-know .background .inner-content {
+          display: block;
+          margin: 0.6rem 0; } }
       .did-you-know .background .inner-content .image {
         height: 10rem;
         display: flex;
@@ -1170,10 +1188,14 @@ footer {
         display: block; } }
   .carrier-banner .inner-content {
     margin: 14.6rem 0;
-    /* 991 px*/ }
+    /* 991 px*/
+    /* 480 px*/ }
     @media (max-width: 992px) {
       .carrier-banner .inner-content {
         margin: 4rem 0; } }
+    @media (max-width: 576px) {
+      .carrier-banner .inner-content {
+        text-align: center; } }
 
 .carrier-screening-option {
   /* 991 px*/ }
