@@ -533,6 +533,83 @@ textarea {
     margin-left: 0.4rem;
     transform: rotate(-90deg); }
 
+.contact-popup {
+  display: none;
+  /* 991 px*/ }
+  .contact-popup.open {
+    display: block; }
+  @media (max-width: 992px) {
+    .contact-popup {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.2);
+      z-index: 999; } }
+  .contact-popup h2 {
+    max-width: 90rem;
+    margin: auto; }
+  .contact-popup .popup-inner {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    background-image: url(../images/contact-popup-bg.svg);
+    background-size: cover;
+    background-position: bottom;
+    text-align: center;
+    z-index: 9;
+    padding-top: 10rem;
+    /* 767 px*/ }
+    @media (max-width: 768px) {
+      .contact-popup .popup-inner {
+        height: auto;
+        top: auto;
+        bottom: 0;
+        border-top-left-radius: 1.6rem;
+        border-top-right-radius: 1.6rem;
+        padding-top: 7rem;
+        display: flex;
+        justify-content: flex-end;
+        align-content: flex-end; } }
+  .contact-popup .contact-details {
+    background-color: #ffffff;
+    max-width: 47rem;
+    margin: 4rem auto;
+    padding: 1.4rem 3.2rem;
+    border: 1px solid #d0dbe8;
+    text-align: left;
+    /* 767 px*/ }
+    @media (max-width: 768px) {
+      .contact-popup .contact-details {
+        margin-bottom: 0; } }
+    .contact-popup .contact-details a {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      text-decoration: none;
+      margin: 1rem 0; }
+      .contact-popup .contact-details a img {
+        margin-right: 1.2rem; }
+  .contact-popup .container {
+    position: relative;
+    /* 767 px*/ }
+    @media (max-width: 768px) {
+      .contact-popup .container {
+        margin: 0 auto 3.2rem; } }
+  .contact-popup .close-modal {
+    position: absolute;
+    top: -5.5rem;
+    right: 4.5rem;
+    /* 767 px*/ }
+    @media (max-width: 768px) {
+      .contact-popup .close-modal {
+        right: 1.5rem;
+        top: -4.5rem; } }
+
 .accordion {
   background-color: #ffffff;
   color: #21262c;
@@ -1719,6 +1796,9 @@ p {
 
 .text-medium {
   font-family: "Montserrat Medium", sans-serif; }
+
+.text-semibold {
+  font-family: "Montserrat Semibold", sans-serif; }
 
 .body-large {
   font-size: 2rem !important;

@@ -1,10 +1,9 @@
-
 // Accordion code starts
 var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+  acc[i].addEventListener("click", function () {
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
     if (panel.style.display === "block") {
@@ -54,40 +53,51 @@ function menuMobile() {
 }
 // Mobile hamburger code ends
 
-$(document).ready(function(){
+// Contact popup code starts
+function toggleContact() {
+  var x = document.getElementById("contact-modal");
+  if (x.className === "contact-popup") {
+    x.className += " open";
+  } else {
+    x.className = "topnav";
+  }
+}
+// Contact popup code ends
+
+$(document).ready(function () {
   // Prepair tab code starts
-$('#prepair-visible').click(function(){
-  $('#plus-visible').removeClass('active');
-  $(this).addClass('active');
-  $('#prepair-plan').show();
-  $('#plus-plan').hide();
-});
-// Prepair tab code ends
+  $("#prepair-visible").click(function () {
+    $("#plus-visible").removeClass("active");
+    $(this).addClass("active");
+    $("#prepair-plan").show();
+    $("#plus-plan").hide();
+  });
+  // Prepair tab code ends
 
-// Prepair plus tab code starts
-$('#plus-visible').click(function(){
-  $('#prepair-visible').removeClass('active');
-  $(this).addClass('active');
-  $('#prepair-plan').hide();
-  $('#plus-plan').show();
-});
-// Prepair plus tab code ends
+  // Prepair plus tab code starts
+  $("#plus-visible").click(function () {
+    $("#prepair-visible").removeClass("active");
+    $(this).addClass("active");
+    $("#prepair-plan").hide();
+    $("#plus-plan").show();
+  });
+  // Prepair plus tab code ends
 
-// Step prepair visible code starts
-$('#step-prepair-visible').click(function(){
-  $('#step-plus-visible').removeClass('active');
-  $(this).addClass('active');
-  $('#step-prepair-plan').show();
-  $('#step-plus-plan').hide();
-});
-// Step prepair visible code ends
+  // Step prepair visible code starts
+  $("#step-prepair-visible").click(function () {
+    $("#step-plus-visible").removeClass("active");
+    $(this).addClass("active");
+    $("#step-prepair-plan").show();
+    $("#step-plus-plan").hide();
+  });
+  // Step prepair visible code ends
 
-// Step prepair plus visible code starts
-$('#step-plus-visible').click(function(){
-  $('#step-prepair-visible').removeClass('active');
-  $(this).addClass('active');
-  $('#step-prepair-plan').hide();
-  $('#step-plus-plan').show();
-});
-// Step prepair plus visible code ends
+  // Step prepair plus visible code starts
+  $("#step-plus-visible").click(function () {
+    $("#step-prepair-visible").removeClass("active");
+    $(this).addClass("active");
+    $("#step-prepair-plan").hide();
+    $("#step-plus-plan").show();
+  });
+  // Step prepair plus visible code ends
 });

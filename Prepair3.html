@@ -43,7 +43,11 @@
                 </div>
               </li>
               <li><a href="#">Find a blood collection site</a></li>
-              <li><a href="#">Talk to us</a></li>
+              <li>
+                <a href="javascript:void(0);" onclick="toggleContact()"
+                  >Talk to us</a
+                >
+              </li>
               <li>
                 <a href="https://www.vcgs.org.au/order" class="button-primary">
                   Ready to order
@@ -325,6 +329,36 @@
           <div class="actions">
             <button class="no-margin button-primary white">Talk to us</button>
             <button class="button-primary">Ready to order</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-popup" id="contact-modal">
+      <div class="popup-inner">
+        <div class="container">
+          <a
+            class="close-modal"
+            href="javascript:void(0);"
+            onclick="toggleContact()"
+          >
+            <img src="assets/images/close-big.svg" alt="" />
+          </a>
+          <h2>
+            We offer consults via phone, zoom or in person at The Royal
+            Children's Hospital.
+          </h2>
+          <div class="contact-details">
+            <p class="body-large text-semibold">
+              Contact us to arrange an appointment
+            </p>
+            <a href="tel:99364602">
+              <img src="assets/images/phone.svg" alt="" />
+              9936-4602
+            </a>
+            <a href="mailto:screeninggc@vcgs.org.au">
+              <img src="assets/images/email.svg" alt="" />
+              screeninggc@vcgs.org.au
+            </a>
           </div>
         </div>
       </div>

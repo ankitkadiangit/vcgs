@@ -1,0 +1,80 @@
+.contact-popup {
+  display: none;
+  &.open {
+    display: block;
+  }
+  @include breakpoint(medium) {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+  h2 {
+    max-width: 90rem;
+    margin: auto;
+  }
+  .popup-inner {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: color("shades", "white");
+    background-image: url(../images/contact-popup-bg.svg);
+    background-size: cover;
+    background-position: bottom;
+    text-align: center;
+    z-index: 9;
+    padding-top: 10rem;
+    @include breakpoint(small) {
+      height: auto;
+      top: auto;
+      bottom: 0;
+      border-top-left-radius: 1.6rem;
+      border-top-right-radius: 1.6rem;
+      padding-top: 7rem;
+      display: flex;
+      justify-content: flex-end;
+      align-content: flex-end;
+    }
+  }
+  .contact-details {
+    background-color: color("shades", "white");
+    max-width: 47rem;
+    margin: 4rem auto;
+    padding: 1.4rem 3.2rem;
+    border: 1px solid color("grey", "lighten-5");
+    text-align: left;
+    @include breakpoint(small) {
+      margin-bottom: 0;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      text-decoration: none;
+      margin: 1rem 0;
+      img {
+        margin-right: 1.2rem;
+      }
+    }
+  }
+  .container {
+    position: relative;
+    @include breakpoint(small) {
+      margin: 0 auto 3.2rem;
+    }
+  }
+  .close-modal {
+    position: absolute;
+    top: -5.5rem;
+    right: 4.5rem;
+    @include breakpoint(small) {
+      right: 1.5rem;
+      top: -4.5rem;
+    }
+  }
+}

@@ -58,6 +58,10 @@ p {
   font-family: $font-medium;
 }
 
+.text-semibold {
+  font-family: $font-semibold;
+}
+
 .body-large {
   font-size: $body-large !important;
   @include breakpoint(small) {
