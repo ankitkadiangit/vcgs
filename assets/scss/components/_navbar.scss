@@ -1,15 +1,61 @@
 .topnav {
-  padding: 1.5rem 0;
+  padding: 1.8rem 0;
   position: relative;
+  .close-nav {
+    display: none;
+  }
+  .desktop-visible {
+    @include breakpoint(medium) {
+      display: none;
+    }
+  }
+  .mobile-visible {
+    display: none;
+    @include breakpoint(medium) {
+      display: block;
+    }
+  }
   &.responsive {
     @include breakpoint(medium) {
-      position: relative;
+      position: fixed;
+      height: 100vh;
+      width: 100vw;
+      background-color: rgba(0, 0, 0, 0.2);
+      z-index: 99;
     }
     li {
       @include breakpoint(medium) {
         display: block;
-        line-height: 2.2;
       }
+      &.menu-icon {
+        position: absolute;
+        top: 1.8rem;
+        right: 1.5rem;
+        height: 4.4rem;
+        width: 4.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .close-nav {
+          display: block;
+        }
+        .open-nav {
+          display: none;
+        }
+      }
+    }
+    ul {
+      margin: 0;
+      padding: 7.2rem 0 1.5rem;
+      position: absolute;
+      top: 0;
+      display: block;
+      width: calc(100% - 5rem);
+      left: auto;
+      right: 0;
+      background-color: color("shades", "white");
+      height: 100vh;
+      z-index: 99;
     }
   }
   .logo {
@@ -39,22 +85,28 @@
   ul {
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     margin: 0;
-    @include breakpoint(medium) {
-      padding: 1.5rem;
-      position: absolute;
-      top: 8rem;
-      display: block;
-      width: 100%;
-      left: 0;
-      background-color: color("shades", "white");
-    }
+
     .dropdown {
       position: relative;
       &:hover .dropdown-content {
         display: block;
+      }
+      @include breakpoint(medium) {
+        > a {
+          font-size: $small-cap;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          background-color: color("grey", "lighten-6");
+          display: block;
+          padding: 1.2rem 1.6rem;
+          height: auto !important;
+          &::after {
+            display: none;
+          }
+        }
       }
       &::after {
         position: absolute;
@@ -71,14 +123,27 @@
           right: auto;
           top: 0.6rem;
         }
+        @include breakpoint(medium) {
+          display: none;
+        }
       }
       .dropdown-content {
         display: none;
         position: absolute;
         background-color: color("shades", "white");
-        min-width: 16rem;
+        width: 32rem;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
+        @include breakpoint(medium) {
+          width: 100%;
+        }
+        .image {
+          max-width: 12rem;
+          width: 100%;
+        }
+        > a {
+          border-bottom: 1px solid color("grey", "lighten-5");
+        }
         a {
           float: none;
           color: color("grey", "lighten-1");
@@ -89,11 +154,76 @@
           &:hover {
             background-color: color("grey", "lighten-6");
           }
+          @include breakpoint(medium) {
+            display: flex;
+            align-items: center;
+          }
+        }
+        @include breakpoint(medium) {
+          display: block;
+          position: static;
+          box-shadow: none;
         }
       }
     }
     li {
-      margin: 0 4.4rem;
+      margin: 0 3.2rem;
+      &:nth-child(1),
+      &:nth-child(2) {
+        @include breakpoint(medium) {
+          a {
+            position: relative;
+            height: 6.4rem;
+            display: flex;
+            align-items: center;
+            padding: 1.2rem 1.6rem;
+            border-bottom: 1px solid color("grey", "lighten-5");
+            &::after {
+              position: absolute;
+              right: 1.6rem;
+              top: 0;
+              bottom: 0;
+              margin: auto;
+              background-image: url(../images/arrow-right.svg);
+              background-repeat: no-repeat;
+              background-size: 65%;
+              background-color: color("grey", "lighten-6");
+              background-position: center center;
+              border-radius: $button-radius;
+              content: "";
+              height: 4rem;
+              width: 4rem;
+            }
+          }
+        }
+      }
+      &:nth-child(3) {
+        @include breakpoint(medium) {
+          a {
+            height: 4rem;
+            margin: 1.2rem 1.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid color("grey", "lighten-3");
+          }
+        }
+      }
+      &:nth-child(4) {
+        @include breakpoint(medium) {
+          a {
+            margin: 1.2rem 1.6rem;
+            display: block;
+            text-align: center;
+          }
+        }
+      }
+      &:nth-child(1) {
+        margin-left: 0;
+      }
+      &:nth-child(4) {
+        margin-right: 0;
+      }
       @include breakpoint(large) {
         margin: 0 2.4rem;
       }
