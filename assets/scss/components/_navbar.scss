@@ -1,9 +1,6 @@
 .topnav {
   padding: 1.8rem 0;
   position: relative;
-  .close-nav {
-    display: none;
-  }
   .desktop-visible {
     @include breakpoint(medium) {
       display: none;
@@ -37,7 +34,7 @@
         align-items: center;
         justify-content: center;
         .close-nav {
-          display: block;
+          display: flex;
         }
         .open-nav {
           display: none;
@@ -73,6 +70,14 @@
   }
   .menu-icon {
     display: none;
+    a {
+      height: 4.4rem;
+      width: 4.4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 !important;
+    }
     @include breakpoint(medium) {
       display: block;
     }
@@ -233,6 +238,9 @@
       }
       a {
         text-decoration: none;
+        &.close-nav {
+          display: none;
+        }
       }
     }
   }

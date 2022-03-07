@@ -690,8 +690,6 @@ textarea {
 .topnav {
   padding: 1.8rem 0;
   position: relative; }
-  .topnav .close-nav {
-    display: none; }
   .topnav .desktop-visible {
     /* 991 px*/ }
     @media (max-width: 992px) {
@@ -727,7 +725,7 @@ textarea {
         align-items: center;
         justify-content: center; }
         .topnav.responsive li.menu-icon .close-nav {
-          display: block; }
+          display: flex; }
         .topnav.responsive li.menu-icon .open-nav {
           display: none; }
     .topnav.responsive ul {
@@ -759,6 +757,13 @@ textarea {
   .topnav .menu-icon {
     display: none;
     /* 991 px*/ }
+    .topnav .menu-icon a {
+      height: 4.4rem;
+      width: 4.4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 !important; }
     @media (max-width: 992px) {
       .topnav .menu-icon {
         display: block; } }
@@ -903,6 +908,8 @@ textarea {
           margin: 0; } }
       .topnav ul li a {
         text-decoration: none; }
+        .topnav ul li a.close-nav {
+          display: none; }
 
 .tab {
   display: flex;
