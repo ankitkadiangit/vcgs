@@ -455,6 +455,9 @@ input:focus {
   display: -webkit-flex;
   display: flex; }
 
+.align-items-center {
+  align-items: center; }
+
 .shadow {
   box-shadow: 0 0 1.3rem #d0dbe8; }
 
@@ -1560,8 +1563,6 @@ footer {
     @media (max-width: 1200px) {
       .career-screening-tell.five-carrier-screening h3 {
         margin-top: 0; } }
-  .career-screening-tell.five-carrier-screening .row {
-    align-items: flex-start; }
   .career-screening-tell.five-carrier-screening .right-content {
     padding-left: 4.8rem;
     /* 991 px*/ }

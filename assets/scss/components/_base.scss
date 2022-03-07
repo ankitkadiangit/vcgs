@@ -75,6 +75,10 @@ input:focus {
   @include flexbox;
 }
 
+.align-items-center {
+  align-items: center;
+}
+
 .shadow {
   box-shadow: 0 0 1.3rem color("grey", "lighten-5");
 }
