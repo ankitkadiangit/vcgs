@@ -1007,11 +1007,14 @@ textarea {
   padding: 2rem;
   text-align: center;
   /* 991 px*/ }
+  .tabcontent.fixed-width {
+    max-width: 95.6rem;
+    width: 100%;
+    margin: auto; }
   @media (max-width: 992px) {
     .tabcontent {
       padding: 1.5rem 0 3rem; } }
   .tabcontent p {
-    line-height: 140%;
     margin: 1rem 0;
     /* 767 px*/ }
     @media (max-width: 768px) {
@@ -1825,6 +1828,7 @@ p {
 
 .body-large {
   font-size: 2rem !important;
+  line-height: 3.2rem;
   /* 767 px*/ }
   @media (max-width: 768px) {
     .body-large {

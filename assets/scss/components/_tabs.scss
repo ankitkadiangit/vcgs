@@ -135,11 +135,15 @@
   display: none;
   padding: 2rem;
   text-align: center;
+  &.fixed-width {
+    max-width: 95.6rem;
+    width: 100%;
+    margin: auto;
+  }
   @include breakpoint(medium) {
     padding: 1.5rem 0 3rem;
   }
   p {
-    line-height: 140%;
     margin: 1rem 0;
     @include breakpoint(small) {
       font-size: $body-medium;

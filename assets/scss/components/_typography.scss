@@ -64,6 +64,7 @@ p {
 
 .body-large {
   font-size: $body-large !important;
+  line-height: 3.2rem;
   @include breakpoint(small) {
     font-size: $body-medium !important;
   }
