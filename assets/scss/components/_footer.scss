@@ -1,19 +1,39 @@
 footer {
-  padding: 8rem 0;
+  padding: 8rem 0 5rem;
   border-top: 1rem solid color("blue", "base");
   @include breakpoint(medium) {
     padding: 4rem 0;
   }
-  .row .col {
-    @include breakpoint(x-small) {
-      float: none;
+  .row {
+    @media (max-width: 601px) {
+      display: flex;
+      flex-direction: column;
+    }
+    .col {
+      @include breakpoint(x-small) {
+        float: none;
+      }
     }
   }
-  .logo-images {
-    img {
-      margin: 3rem 1rem 0 0;
-      @include breakpoint(medium) {
-        max-width: 15rem;
+  .brand-logo {
+    a {
+      display: inline-block;
+      &.logo {
+        margin-bottom: 4.5rem;
+        @include breakpoint(small) {
+          margin-bottom: 3rem;
+        }
+      }
+    }
+    .logo-images {
+      @include breakpoint(x-small) {
+        display: flex;
+      }
+      a {
+        margin: 0 5rem 3rem 0;
+        @include breakpoint(small) {
+          margin: 0 1.3rem 0 0;
+        }
       }
     }
   }

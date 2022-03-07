@@ -420,6 +420,9 @@ img {
 .no-padding {
   padding: 0 !important; }
 
+.no-border {
+  border: none !important; }
+
 .large-button {
   padding: 13px 63px !important; }
 
@@ -1016,23 +1019,40 @@ textarea {
         font-size: 1.6rem; } }
 
 footer {
-  padding: 8rem 0;
+  padding: 8rem 0 5rem;
   border-top: 1rem solid #00538b;
   /* 991 px*/ }
   @media (max-width: 992px) {
     footer {
       padding: 4rem 0; } }
+  @media (max-width: 601px) {
+    footer .row {
+      display: flex;
+      flex-direction: column; } }
   footer .row .col {
     /* 480 px*/ }
     @media (max-width: 576px) {
       footer .row .col {
         float: none; } }
-  footer .logo-images img {
-    margin: 3rem 1rem 0 0;
-    /* 991 px*/ }
-    @media (max-width: 992px) {
-      footer .logo-images img {
-        max-width: 15rem; } }
+  footer .brand-logo a {
+    display: inline-block; }
+    footer .brand-logo a.logo {
+      margin-bottom: 4.5rem;
+      /* 767 px*/ }
+      @media (max-width: 768px) {
+        footer .brand-logo a.logo {
+          margin-bottom: 3rem; } }
+  footer .brand-logo .logo-images {
+    /* 480 px*/ }
+    @media (max-width: 576px) {
+      footer .brand-logo .logo-images {
+        display: flex; } }
+    footer .brand-logo .logo-images a {
+      margin: 0 5rem 3rem 0;
+      /* 767 px*/ }
+      @media (max-width: 768px) {
+        footer .brand-logo .logo-images a {
+          margin: 0 1.3rem 0 0; } }
   footer .pre-heading {
     /* 767 px*/ }
     @media (max-width: 768px) {
@@ -1207,7 +1227,7 @@ footer {
   /* 991 px*/ }
   @media (max-width: 992px) {
     .arrange-testing {
-      padding: 4rem 0 2rem; } }
+      padding: 4rem 0; } }
   .arrange-testing.percept {
     background-image: url(../images/arrange-testing-bg-1.svg);
     /* 991 px*/ }
@@ -1362,14 +1382,17 @@ footer {
         margin-top: 1.6rem; } }
     .arrange-testing .link-button a {
       margin: 0 2rem;
+      /* 991 px*/
       /* 767 px*/ }
+      @media (max-width: 992px) {
+        .arrange-testing .link-button a {
+          margin-bottom: 2rem; } }
       @media (max-width: 768px) {
         .arrange-testing .link-button a {
-          margin: 0;
+          margin: 0 0 2rem;
           display: flex;
           text-align: center;
-          justify-content: center;
-          margin-bottom: 2rem; } }
+          justify-content: center; } }
 
 .did-you-know {
   padding: 8rem 0; }
