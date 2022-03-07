@@ -55,12 +55,8 @@ function menuMobile() {
 
 // Contact popup code starts
 function toggleContact() {
-  var x = document.getElementById("contact-modal");
-  if (x.className === "contact-popup") {
-    x.className += " open";
-  } else {
-    x.className = "topnav";
-  }
+  var element = document.getElementById("contact-modal");
+  element.classList.toggle("open");
 }
 // Contact popup code ends
 
