@@ -22,6 +22,7 @@ footer {
         margin-bottom: 4.5rem;
         @include breakpoint(small) {
           margin-bottom: 3rem;
+          width: 15rem;
         }
       }
     }

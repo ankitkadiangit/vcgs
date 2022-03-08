@@ -8,11 +8,22 @@
   text-align: center;
   h3 {
     margin-bottom: 4rem;
+    @include breakpoint(medium) {
+      margin-bottom: 2.4rem;
+    }
   }
   .row {
     display: flex;
+    @include breakpoint(medium) {
+      display: block;
+    }
     .col {
       display: flex;
+      @include breakpoint(medium) {
+        display: block;
+        width: 100%;
+        float: none;
+      }
       &:nth-child(1) {
         .logo-icon {
           background-color: lighten(color("green", "lighten-2"), 48%);
@@ -25,6 +36,10 @@
       }
       .inner-content {
         display: flex;
+        @include breakpoint(medium) {
+          display: block;
+          margin: 1.2rem 0;
+        }
       }
     }
   }
@@ -65,31 +80,45 @@
 .services-pregnancy {
   padding: 8rem 0;
   text-align: center;
+  @include breakpoint(medium) {
+    padding: 6.8rem 0 4rem;
+  }
   h2 {
     margin-bottom: 6.4rem;
+    @include breakpoint(medium) {
+      margin: 0 0 4rem;
+    }
   }
   .row {
     display: flex;
     margin: auto;
     position: relative;
-    &::after {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      content: "";
-      background-image: url(../images/services-pregnancy-bg.svg);
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: 0 8.4rem;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto;
+    @include breakpoint(medium) {
+      display: block;
     }
+    // &::after {
+    //   position: absolute;
+    //   height: 100%;
+    //   width: 100%;
+    //   content: "";
+    //   background-image: url(../images/services-pregnancy-bg.svg);
+    //   background-size: 100%;
+    //   background-repeat: no-repeat;
+    //   background-position: 0 8.4rem;
+    //   left: 0;
+    //   right: 0;
+    //   top: 0;
+    //   bottom: 0;
+    //   margin: auto;
+    // }
     .col {
       display: flex;
       padding: 0;
+      @include breakpoint(medium) {
+        display: block;
+        width: 100%;
+        float: none;
+      }
     }
   }
   .inner-content {
@@ -152,6 +181,12 @@
 .question-contact.homepage {
   background: url(../images/contact-homepage-bg.svg);
   background-size: cover;
+  @include breakpoint(medium) {
+    text-align: center;
+    .small-cap {
+      margin-top: 4rem;
+    }
+  }
   .row {
     display: flex;
     align-items: center;
@@ -171,8 +206,19 @@
   background-position: bottom;
   padding: 8rem 0;
   text-align: center;
+  @include breakpoint(medium) {
+    padding: 4rem 0;
+  }
   h2 {
     margin: 0 0 6.4rem;
+    @include breakpoint(medium) {
+      margin-bottom: 1.6rem;
+    }
+  }
+  .inner-content {
+    @include breakpoint(medium) {
+      margin: 2.4rem 0;
+    }
   }
 }
 

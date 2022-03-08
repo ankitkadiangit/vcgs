@@ -1064,7 +1064,8 @@ footer {
       /* 767 px*/ }
       @media (max-width: 768px) {
         footer .brand-logo a.logo {
-          margin-bottom: 3rem; } }
+          margin-bottom: 3rem;
+          width: 15rem; } }
   footer .brand-logo .logo-images {
     /* 480 px*/ }
     @media (max-width: 576px) {
@@ -1101,17 +1102,36 @@ footer {
 .how-can-we-help {
   text-align: center; }
   .how-can-we-help h3 {
-    margin-bottom: 4rem; }
+    margin-bottom: 4rem;
+    /* 991 px*/ }
+    @media (max-width: 992px) {
+      .how-can-we-help h3 {
+        margin-bottom: 2.4rem; } }
   .how-can-we-help .row {
-    display: flex; }
+    display: flex;
+    /* 991 px*/ }
+    @media (max-width: 992px) {
+      .how-can-we-help .row {
+        display: block; } }
     .how-can-we-help .row .col {
-      display: flex; }
+      display: flex;
+      /* 991 px*/ }
+      @media (max-width: 992px) {
+        .how-can-we-help .row .col {
+          display: block;
+          width: 100%;
+          float: none; } }
       .how-can-we-help .row .col:nth-child(1) .logo-icon {
         background-color: #ebf8ec; }
       .how-can-we-help .row .col:nth-child(2) .logo-icon {
         background-color: #e5f8ff; }
       .how-can-we-help .row .col .inner-content {
-        display: flex; }
+        display: flex;
+        /* 991 px*/ }
+        @media (max-width: 992px) {
+          .how-can-we-help .row .col .inner-content {
+            display: block;
+            margin: 1.2rem 0; } }
   .how-can-we-help .inner-content {
     text-align: left; }
     .how-can-we-help .inner-content a {
@@ -1140,30 +1160,34 @@ footer {
 
 .services-pregnancy {
   padding: 8rem 0;
-  text-align: center; }
+  text-align: center;
+  /* 991 px*/ }
+  @media (max-width: 992px) {
+    .services-pregnancy {
+      padding: 6.8rem 0 4rem; } }
   .services-pregnancy h2 {
-    margin-bottom: 6.4rem; }
+    margin-bottom: 6.4rem;
+    /* 991 px*/ }
+    @media (max-width: 992px) {
+      .services-pregnancy h2 {
+        margin: 0 0 4rem; } }
   .services-pregnancy .row {
     display: flex;
     margin: auto;
-    position: relative; }
-    .services-pregnancy .row::after {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      content: "";
-      background-image: url(../images/services-pregnancy-bg.svg);
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: 0 8.4rem;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto; }
+    position: relative;
+    /* 991 px*/ }
+    @media (max-width: 992px) {
+      .services-pregnancy .row {
+        display: block; } }
     .services-pregnancy .row .col {
       display: flex;
-      padding: 0; }
+      padding: 0;
+      /* 991 px*/ }
+      @media (max-width: 992px) {
+        .services-pregnancy .row .col {
+          display: block;
+          width: 100%;
+          float: none; } }
   .services-pregnancy .inner-content {
     padding: 2.4rem;
     text-align: left;
@@ -1208,7 +1232,13 @@ footer {
 
 .question-contact.homepage {
   background: url(../images/contact-homepage-bg.svg);
-  background-size: cover; }
+  background-size: cover;
+  /* 991 px*/ }
+  @media (max-width: 992px) {
+    .question-contact.homepage {
+      text-align: center; }
+      .question-contact.homepage .small-cap {
+        margin-top: 4rem; } }
   .question-contact.homepage .row {
     display: flex;
     align-items: center; }
@@ -1223,9 +1253,22 @@ footer {
   background-size: cover;
   background-position: bottom;
   padding: 8rem 0;
-  text-align: center; }
+  text-align: center;
+  /* 991 px*/ }
+  @media (max-width: 992px) {
+    .why-choose-vcgs {
+      padding: 4rem 0; } }
   .why-choose-vcgs h2 {
-    margin: 0 0 6.4rem; }
+    margin: 0 0 6.4rem;
+    /* 991 px*/ }
+    @media (max-width: 992px) {
+      .why-choose-vcgs h2 {
+        margin-bottom: 1.6rem; } }
+  .why-choose-vcgs .inner-content {
+    /* 991 px*/ }
+    @media (max-width: 992px) {
+      .why-choose-vcgs .inner-content {
+        margin: 2.4rem 0; } }
 
 /*==== Homepage Page code ends ====*/
 /*==== Prepair Page code starts ====*/
