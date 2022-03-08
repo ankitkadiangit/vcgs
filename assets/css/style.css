@@ -1100,6 +1100,8 @@ footer {
 
 .how-can-we-help {
   text-align: center; }
+  .how-can-we-help h3 {
+    margin-bottom: 4rem; }
   .how-can-we-help .row {
     display: flex; }
     .how-can-we-help .row .col {
@@ -1137,7 +1139,10 @@ footer {
           margin: 0; }
 
 .services-pregnancy {
+  padding: 8rem 0;
   text-align: center; }
+  .services-pregnancy h2 {
+    margin-bottom: 6.4rem; }
   .services-pregnancy .row {
     display: flex;
     margin: auto;
@@ -1200,6 +1205,27 @@ footer {
       display: flex; }
       .services-pregnancy .inner-content a img {
         margin-left: 0.8rem; }
+
+.question-contact.homepage {
+  background: url(../images/contact-homepage-bg.svg);
+  background-size: cover; }
+  .question-contact.homepage .row {
+    display: flex;
+    align-items: center; }
+  .question-contact.homepage h2 {
+    color: #21262c;
+    margin: 0.8rem 0 1.2rem; }
+    .question-contact.homepage h2 + p {
+      margin: 0 0 3.2rem; }
+
+.why-choose-vcgs {
+  background-image: url(../images/why-choose-vcgs-bg.svg);
+  background-size: cover;
+  background-position: bottom;
+  padding: 8rem 0;
+  text-align: center; }
+  .why-choose-vcgs h2 {
+    margin: 0 0 6.4rem; }
 
 /*==== Homepage Page code ends ====*/
 /*==== Prepair Page code starts ====*/
