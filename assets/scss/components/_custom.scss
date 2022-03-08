@@ -1,4 +1,152 @@
+/*==== Homepage Page code starts ====*/
+.homepage-banner {
+  background-image: url(../images/homepage-banner-bg.svg);
+  background-size: cover;
+  background-position: top;
+}
+.how-can-we-help {
+  text-align: center;
+  .row {
+    display: flex;
+    .col {
+      display: flex;
+      &:nth-child(1) {
+        .logo-icon {
+          background-color: lighten(color("green", "lighten-2"), 48%);
+        }
+      }
+      &:nth-child(2) {
+        .logo-icon {
+          background-color: lighten(color("blue", "lighten-2"), 48%);
+        }
+      }
+      .inner-content {
+        display: flex;
+      }
+    }
+  }
+  .inner-content {
+    text-align: left;
+    a {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      box-shadow: $shadow;
+      .logo-icon {
+        padding: 1.2rem;
+        background-color: color;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: color("grey", "lighten-7");
+        .logo {
+          width: 11.46rem;
+          height: 4.8rem;
+          display: flex;
+          align-items: center;
+        }
+      }
+      .content {
+        padding: 1.2rem;
+        h4 {
+          margin: 0 0 0.8rem;
+        }
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.services-pregnancy {
+  text-align: center;
+  .row {
+    display: flex;
+    margin: auto;
+    position: relative;
+    &::after {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      content: "";
+      background-image: url(../images/services-pregnancy-bg.svg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: 0 8.4rem;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    .col {
+      display: flex;
+      padding: 0;
+    }
+  }
+  .inner-content {
+    padding: 2.4rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    &.green {
+      background-color: lighten(color("green", "lighten-2"), 48%);
+    }
+    &.blue {
+      background-color: lighten(color("blue", "lighten-2"), 48%);
+    }
+    &.orange {
+      background-color: lighten(color("orange", "base"), 39%);
+    }
+    &.purple {
+      background-color: lighten(color("purple", "base"), 55%);
+    }
+    .icon-logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.6rem;
+      .icon {
+        margin-right: 1.6rem;
+        height: 5.6rem;
+        width: 5.6rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: color("shades", "white");
+      }
+      .logo {
+        width: 11.46rem;
+        height: 4.8rem;
+      }
+      & + .small-cap {
+        margin: 0;
+      }
+    }
+    h4 {
+      margin: 0.4rem 0 0.8rem;
+      & + p {
+        margin: 0;
+      }
+    }
+    .small-cap {
+      margin: 2.4rem 0 0.4rem;
+    }
+    a {
+      display: flex;
+      img {
+        margin-left: 0.8rem;
+      }
+    }
+  }
+}
+
+/*==== Homepage Page code ends ====*/
+
+/*==== Prepair Page code starts ====*/
 .intro {
+  padding-top: 9rem;
   .inner-content {
     text-align: center;
     max-width: 70rem;
@@ -424,12 +572,14 @@
     margin-top: 3.2rem;
   }
 }
+/*==== Prepair Page code ends ====*/
 
 /*==== Prepair 3.1 Page code starts ====*/
 
 .carrier-banner {
   display: flex;
   align-items: flex-end;
+  padding-top: 9rem;
   .row {
     display: flex;
     align-items: flex-end;

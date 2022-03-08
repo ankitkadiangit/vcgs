@@ -1,6 +1,12 @@
 .topnav {
   padding: 1.8rem 0;
-  position: relative;
+  position: absolute;
+  width: 100%;
+  @include breakpoint(medium) {
+    .nav-links {
+      width: 4.4rem;
+    }
+  }
   .desktop-visible {
     @include breakpoint(medium) {
       display: none;
@@ -93,7 +99,10 @@
     justify-content: flex-end;
     align-items: center;
     margin: 0;
-
+    @include breakpoint(medium) {
+      width: 4rem;
+      transition: width 0.2s ease-out;
+    }
     .dropdown {
       position: relative;
       &:hover .dropdown-content {

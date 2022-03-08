@@ -383,8 +383,8 @@ th {
 .red-color .base {
   background-color: #ff0404; }
 
-.orange-color .base {
-  background-color: #ff7a00; }
+.orange .base-text {
+  color: #ed7d31; }
 
 /* breakpoints */
 html {
@@ -689,7 +689,12 @@ textarea {
 
 .topnav {
   padding: 1.8rem 0;
-  position: relative; }
+  position: absolute;
+  width: 100%;
+  /* 991 px*/ }
+  @media (max-width: 992px) {
+    .topnav .nav-links {
+      width: 4.4rem; } }
   .topnav .desktop-visible {
     /* 991 px*/ }
     @media (max-width: 992px) {
@@ -776,7 +781,12 @@ textarea {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin: 0; }
+    margin: 0;
+    /* 991 px*/ }
+    @media (max-width: 992px) {
+      .topnav ul {
+        width: 4rem;
+        transition: width 0.2s ease-out; } }
     .topnav ul .dropdown {
       position: relative;
       /* 991 px*/ }
@@ -1082,15 +1092,128 @@ footer {
       display: inline-block;
       margin-right: 1.2rem; }
 
-.intro .inner-content {
-  text-align: center;
-  max-width: 70rem;
-  margin: auto;
-  padding: 8rem 0 3.2rem;
-  /* 991 px*/ }
-  @media (max-width: 992px) {
-    .intro .inner-content {
-      padding: 4rem 0 2rem; } }
+/*==== Homepage Page code starts ====*/
+.homepage-banner {
+  background-image: url(../images/homepage-banner-bg.svg);
+  background-size: cover;
+  background-position: top; }
+
+.how-can-we-help {
+  text-align: center; }
+  .how-can-we-help .row {
+    display: flex; }
+    .how-can-we-help .row .col {
+      display: flex; }
+      .how-can-we-help .row .col:nth-child(1) .logo-icon {
+        background-color: #ebf8ec; }
+      .how-can-we-help .row .col:nth-child(2) .logo-icon {
+        background-color: #e5f8ff; }
+      .how-can-we-help .row .col .inner-content {
+        display: flex; }
+  .how-can-we-help .inner-content {
+    text-align: left; }
+    .how-can-we-help .inner-content a {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      box-shadow: 0 0 1.3rem #d0dbe8; }
+      .how-can-we-help .inner-content a .logo-icon {
+        padding: 1.2rem;
+        background-color: color;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f7f7f7; }
+        .how-can-we-help .inner-content a .logo-icon .logo {
+          width: 11.46rem;
+          height: 4.8rem;
+          display: flex;
+          align-items: center; }
+      .how-can-we-help .inner-content a .content {
+        padding: 1.2rem; }
+        .how-can-we-help .inner-content a .content h4 {
+          margin: 0 0 0.8rem; }
+        .how-can-we-help .inner-content a .content p {
+          margin: 0; }
+
+.services-pregnancy {
+  text-align: center; }
+  .services-pregnancy .row {
+    display: flex;
+    margin: auto;
+    position: relative; }
+    .services-pregnancy .row::after {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      content: "";
+      background-image: url(../images/services-pregnancy-bg.svg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: 0 8.4rem;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto; }
+    .services-pregnancy .row .col {
+      display: flex;
+      padding: 0; }
+  .services-pregnancy .inner-content {
+    padding: 2.4rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column; }
+    .services-pregnancy .inner-content.green {
+      background-color: #ebf8ec; }
+    .services-pregnancy .inner-content.blue {
+      background-color: #e5f8ff; }
+    .services-pregnancy .inner-content.orange {
+      background-color: #fdf0e8; }
+    .services-pregnancy .inner-content.purple {
+      background-color: #efeaf8; }
+    .services-pregnancy .inner-content .icon-logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.6rem; }
+      .services-pregnancy .inner-content .icon-logo .icon {
+        margin-right: 1.6rem;
+        height: 5.6rem;
+        width: 5.6rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff; }
+      .services-pregnancy .inner-content .icon-logo .logo {
+        width: 11.46rem;
+        height: 4.8rem; }
+      .services-pregnancy .inner-content .icon-logo + .small-cap {
+        margin: 0; }
+    .services-pregnancy .inner-content h4 {
+      margin: 0.4rem 0 0.8rem; }
+      .services-pregnancy .inner-content h4 + p {
+        margin: 0; }
+    .services-pregnancy .inner-content .small-cap {
+      margin: 2.4rem 0 0.4rem; }
+    .services-pregnancy .inner-content a {
+      display: flex; }
+      .services-pregnancy .inner-content a img {
+        margin-left: 0.8rem; }
+
+/*==== Homepage Page code ends ====*/
+/*==== Prepair Page code starts ====*/
+.intro {
+  padding-top: 9rem; }
+  .intro .inner-content {
+    text-align: center;
+    max-width: 70rem;
+    margin: auto;
+    padding: 8rem 0 3.2rem;
+    /* 991 px*/ }
+    @media (max-width: 992px) {
+      .intro .inner-content {
+        padding: 4rem 0 2rem; } }
 
 .five-carrier-screening {
   background-image: url(../images/circle-bg.svg);
@@ -1448,10 +1571,12 @@ footer {
   .did-you-know .italic {
     margin-top: 3.2rem; }
 
+/*==== Prepair Page code ends ====*/
 /*==== Prepair 3.1 Page code starts ====*/
 .carrier-banner {
   display: flex;
-  align-items: flex-end; }
+  align-items: flex-end;
+  padding-top: 9rem; }
   .carrier-banner .row {
     display: flex;
     align-items: flex-end;
@@ -1827,6 +1952,9 @@ p {
   letter-spacing: 1px;
   font-family: "Montserrat Bold", sans-serif;
   font-size: 1.3rem; }
+
+.text-regular {
+  font-family: "Montserrat Regular", sans-serif; }
 
 .text-medium {
   font-family: "Montserrat Medium", sans-serif; }

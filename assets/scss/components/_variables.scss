@@ -86,7 +86,7 @@ $button-floating-radius: 50% !default;
 
 // 4. Cards
 // ==========================================================================
-
+$shadow: 0 0 1.3rem color("grey", "lighten-5");
 $card-padding: 17px 25px 20px !default;
 $card-bg-color: #fff !default;
 $card-link-color: color("orange", "base") !default;

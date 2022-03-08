@@ -20,7 +20,7 @@ $purple: (
 );
 
 $orange: (
-  "base": #ff7a00,
+  "base": #ed7d31,
 );
 
 $grey: (
@@ -103,8 +103,8 @@ $colors: (
   }
 }
 
-.orange-color {
-  .base {
-    background-color: color("orange", "base");
+.orange {
+  .base-text {
+    color: color("orange", "base");
   }
 }
