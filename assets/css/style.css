@@ -560,7 +560,7 @@ textarea {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    top: 0;
+    top: -100%;
     left: 0;
     background-color: #ffffff;
     background-image: url(../images/contact-popup-bg.svg);
@@ -694,7 +694,8 @@ textarea {
   /* 991 px*/ }
   @media (max-width: 992px) {
     .topnav .nav-links {
-      width: 4.4rem; } }
+      width: 4rem;
+      height: 4.4rem; } }
   .topnav .desktop-visible {
     /* 991 px*/ }
     @media (max-width: 992px) {
@@ -725,7 +726,7 @@ textarea {
         top: 1.8rem;
         right: 1.5rem;
         height: 4.4rem;
-        width: 4.4rem;
+        width: 4rem;
         display: flex;
         align-items: center;
         justify-content: center; }
@@ -739,7 +740,6 @@ textarea {
       position: absolute;
       top: 0;
       display: block;
-      width: calc(100% - 5rem);
       left: auto;
       right: 0;
       background-color: #ffffff;
@@ -761,10 +761,11 @@ textarea {
         margin-right: 1rem; } }
   .topnav .menu-icon {
     display: none;
+    cursor: pointer;
     /* 991 px*/ }
     .topnav .menu-icon a {
       height: 4.4rem;
-      width: 4.4rem;
+      width: 4rem;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -785,8 +786,8 @@ textarea {
     /* 991 px*/ }
     @media (max-width: 992px) {
       .topnav ul {
-        width: 4rem;
-        transition: width 0.2s ease-out; } }
+        transition: width 0.3s;
+        width: 4rem; } }
     .topnav ul .dropdown {
       position: relative;
       /* 991 px*/ }
@@ -917,7 +918,13 @@ textarea {
           display: none;
           margin: 0; } }
       .topnav ul li a {
-        text-decoration: none; }
+        text-decoration: none;
+        /* 991 px*/ }
+        @media (max-width: 992px) {
+          .topnav ul li a {
+            color: #21262c; } }
+        .topnav ul li a.button-primary {
+          color: #ffffff; }
         .topnav ul li a.close-nav {
           display: none; }
 

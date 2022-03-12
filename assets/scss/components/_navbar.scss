@@ -4,7 +4,8 @@
   width: 100%;
   @include breakpoint(medium) {
     .nav-links {
-      width: 4.4rem;
+      width: 4rem;
+      height: 4.4rem;
     }
   }
   .desktop-visible {
@@ -35,7 +36,7 @@
         top: 1.8rem;
         right: 1.5rem;
         height: 4.4rem;
-        width: 4.4rem;
+        width: 4rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -53,7 +54,6 @@
       position: absolute;
       top: 0;
       display: block;
-      width: calc(100% - 5rem);
       left: auto;
       right: 0;
       background-color: color("shades", "white");
@@ -76,9 +76,10 @@
   }
   .menu-icon {
     display: none;
+    cursor: pointer;
     a {
       height: 4.4rem;
-      width: 4.4rem;
+      width: 4rem;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -100,8 +101,8 @@
     align-items: center;
     margin: 0;
     @include breakpoint(medium) {
+      transition: width 0.3s;
       width: 4rem;
-      transition: width 0.2s ease-out;
     }
     .dropdown {
       position: relative;
@@ -247,6 +248,12 @@
       }
       a {
         text-decoration: none;
+        @include breakpoint(medium) {
+          color: color("grey", "lighten-1");
+        }
+        &.button-primary {
+          color: color("shades", "white");
+        }
         &.close-nav {
           display: none;
         }

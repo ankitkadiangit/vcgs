@@ -51,10 +51,34 @@ function menuMobile() {
     x.className = "topnav";
   }
 }
+function openNav() {
+  document.getElementById("nav-items").style.width = "calc(100% - 5rem)";
+  var x = document.getElementById("headerNav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+function closeNav() {
+  document.getElementById("nav-items").style.width = "4rem";
+  const myTimeout = setTimeout(delayClose, 190);
+}
+
+function delayClose() {
+  var x = document.getElementById("headerNav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 // Mobile hamburger code ends
 
 // Contact popup code starts
 function toggleContact() {
+  document.getElementsByClassName("popup-inner").style.top = "0px";
   var element = document.getElementById("contact-modal");
   element.classList.toggle("open");
 }
