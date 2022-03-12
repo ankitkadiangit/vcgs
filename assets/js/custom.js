@@ -77,10 +77,21 @@ function delayClose() {
 // Mobile hamburger code ends
 
 // Contact popup code starts
-function toggleContact() {
-  document.getElementsByClassName("popup-inner").style.top = "0px";
+function openContact() {
   var element = document.getElementById("contact-modal");
-  element.classList.toggle("open");
+  element.classList.add("open");
+  const myTimeoutNew = setTimeout(delayContact, 100);
+}
+function closeContact() {
+  document.getElementsByClassName("popup-inner")[0].style.bottom = "-100%";
+  const myTimeoutNewe = setTimeout(delayContactClose, 300);
+}
+function delayContact() {
+  document.getElementsByClassName("popup-inner")[0].style.bottom = "0";
+}
+function delayContactClose() {
+  var element = document.getElementById("contact-modal");
+  element.classList.remove("open");
 }
 // Contact popup code ends
 

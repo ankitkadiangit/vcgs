@@ -560,7 +560,8 @@ textarea {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    top: -100%;
+    bottom: -100%;
+    transition: all 0.3s;
     left: 0;
     background-color: #ffffff;
     background-image: url(../images/contact-popup-bg.svg);
@@ -573,8 +574,6 @@ textarea {
     @media (max-width: 768px) {
       .contact-popup .popup-inner {
         height: auto;
-        top: auto;
-        bottom: 0;
         border-top-left-radius: 1.6rem;
         border-top-right-radius: 1.6rem;
         padding-top: 7rem;
