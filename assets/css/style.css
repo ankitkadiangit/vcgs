@@ -524,6 +524,9 @@ textarea {
   @media (max-width: 576px) {
     .button-primary {
       padding: 1.2rem 1.6rem; } }
+  .button-primary:hover, .button-primary:focus {
+    color: #ffffff;
+    background-color: #004472; }
 
 .button-link {
   background-color: transparent;
@@ -539,6 +542,7 @@ textarea {
     margin-left: 0.4rem;
     transform: rotate(-90deg); }
 
+/*==== Talk to us code starts ====*/
 .contact-popup {
   display: none;
   /* 991 px*/ }
@@ -615,6 +619,101 @@ textarea {
         right: 1.5rem;
         top: -4.5rem; } }
 
+/*==== Talk to us code ends ====*/
+/*==== Ready to order code starts ====*/
+.ready-to-order-popup .inner-content {
+  max-width: 48rem;
+  width: 100%;
+  margin: auto; }
+  .ready-to-order-popup .inner-content h2 {
+    margin: 0 0 4rem;
+    /* 767 px*/ }
+    @media (max-width: 768px) {
+      .ready-to-order-popup .inner-content h2 {
+        margin-bottom: 2rem;
+        font-size: 2.1rem; } }
+  .ready-to-order-popup .inner-content .or {
+    position: relative;
+    font-family: "Montserrat Regular", sans-serif; }
+    .ready-to-order-popup .inner-content .or::before, .ready-to-order-popup .inner-content .or::after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -2rem;
+      margin: auto;
+      content: "";
+      height: 1px;
+      width: 50%;
+      background-color: #d0dbe8; }
+    .ready-to-order-popup .inner-content .or::after {
+      left: auto;
+      right: -2rem; }
+  .ready-to-order-popup .inner-content .yes-order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4rem;
+    /* 767 px*/ }
+    @media (max-width: 768px) {
+      .ready-to-order-popup .inner-content .yes-order {
+        display: block;
+        text-align: center; } }
+    .ready-to-order-popup .inner-content .yes-order p {
+      display: flex;
+      align-items: center;
+      margin: 1.8rem 0;
+      /* 767 px*/ }
+      @media (max-width: 768px) {
+        .ready-to-order-popup .inner-content .yes-order p {
+          text-align: center;
+          justify-content: center; } }
+      .ready-to-order-popup .inner-content .yes-order p img {
+        margin-right: 0.8rem; }
+    .ready-to-order-popup .inner-content .yes-order .button-primary img {
+      filter: brightness(0) invert(1);
+      margin-left: 0.8rem;
+      transform: rotate(-90deg); }
+.ready-to-order-popup .contact-data {
+  border-top: 1px solid #d0dbe8;
+  margin-top: 3rem;
+  padding-top: 3rem; }
+  .ready-to-order-popup .contact-data p,
+  .ready-to-order-popup .contact-data a {
+    font-size: 1.3rem;
+    color: #21262c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* 767 px*/ }
+    @media (max-width: 768px) {
+      .ready-to-order-popup .contact-data p,
+      .ready-to-order-popup .contact-data a {
+        justify-content: flex-start;
+        text-align: left; } }
+    .ready-to-order-popup .contact-data p img,
+    .ready-to-order-popup .contact-data a img {
+      height: 1.6rem;
+      width: 1.6rem;
+      margin: 0 1.2rem 0 2.4rem;
+      filter: grayscale(100%);
+      /* 767 px*/ }
+      @media (max-width: 768px) {
+        .ready-to-order-popup .contact-data p img,
+        .ready-to-order-popup .contact-data a img {
+          margin-left: 0; } }
+  .ready-to-order-popup .contact-data .contact-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* 767 px*/ }
+    @media (max-width: 768px) {
+      .ready-to-order-popup .contact-data .contact-inner {
+        display: block;
+        text-align: left; }
+        .ready-to-order-popup .contact-data .contact-inner a {
+          margin: 0.8rem 0; } }
+
+/*==== Ready to order code ends ====*/
 .accordion {
   background-color: #ffffff;
   color: #21262c;

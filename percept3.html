@@ -49,7 +49,11 @@
                 >
               </li>
               <li>
-                <a href="https://www.vcgs.org.au/order" class="button-primary">
+                <a
+                  href="javascript:void(0);"
+                  onclick="openReadyOrder()"
+                  class="button-primary"
+                >
                   Ready to order
                 </a>
               </li>
@@ -390,6 +394,64 @@
         </div>
       </div>
     </section>
+
+    <section
+      class="ready-to-order-popup contact-popup"
+      id="ready-to-order-modal"
+    >
+      <div class="popup-inner popup-inner-order">
+        <div class="container">
+          <a
+            class="close-modal"
+            href="javascript:void(0);"
+            onclick="closeReadyOrder()"
+          >
+            <img src="assets/images/close-big.svg" alt="" />
+          </a>
+          <div class="inner-content">
+            <h2>
+              To arrange <span class="green base-text">prepair</span> or
+              <span class="green base-text">prepair+</span>
+              testing, you will need:
+            </h2>
+            <p>A signed test request form from your doctor</p>
+            <p class="or small-cap">Or</p>
+            <p>A doctor access code</p>
+            <div class="yes-order">
+              <p>
+                <img src="assets/images/check.svg" alt="" />
+                Yes, I have one of these
+              </p>
+              <a href="" class="button-primary">
+                Order now
+                <img src="assets/images/arrow-down.svg" alt="" />
+              </a>
+            </div>
+            <div class="yes-order no-margin">
+              <p>
+                <img src="assets/images/remove.svg" alt="" />
+                No, I don’t have either
+              </p>
+              <p>Please talk to your doctor.</p>
+            </div>
+          </div>
+          <div class="contact-data">
+            <p class="">Please contact our team if you have any questions</p>
+            <div class="contact-inner">
+              <a href="tel:+61399364602">
+                <img src="assets/images/phone.svg" alt="" />
+                +61-3-9936-4602
+              </a>
+              <a href="mailto:screeninggc@vcgs.org.au">
+                <img src="assets/images/email.svg" alt="" />
+                screeninggc@vcgs.org.au
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer>
       <div class="container">
         <div class="row">

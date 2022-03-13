@@ -18,6 +18,11 @@
   @include breakpoint(x-small) {
     padding: $small-button-padding;
   }
+  &:hover,
+  &:focus {
+    color: color("shades", "white");
+    background-color: darken(color("blue", "base"), 5%);
+  }
 }
 .button-link {
   background-color: transparent;

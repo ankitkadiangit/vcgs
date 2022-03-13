@@ -95,6 +95,26 @@ function delayContactClose() {
 }
 // Contact popup code ends
 
+// Ready to order popup code starts
+function openReadyOrder() {
+  var element = document.getElementById("ready-to-order-modal");
+  element.classList.add("open");
+  const myTimeoutNew = setTimeout(delayReadyOrder, 100);
+}
+function closeReadyOrder() {
+  document.getElementsByClassName("popup-inner-order")[0].style.bottom =
+    "-100%";
+  const myTimeoutNewe = setTimeout(delayReadyOrderClose, 300);
+}
+function delayReadyOrder() {
+  document.getElementsByClassName("popup-inner-order")[0].style.bottom = "0";
+}
+function delayReadyOrderClose() {
+  var element = document.getElementById("ready-to-order-modal");
+  element.classList.remove("open");
+}
+// Ready to order popup code ends
+
 $(document).ready(function () {
   // Prepair tab code starts
   $("#prepair-visible").click(function () {
