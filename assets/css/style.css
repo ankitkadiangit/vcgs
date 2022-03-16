@@ -481,7 +481,7 @@ textarea {
   color: #333b43 !important; }
 
 .floating-bottom-bar {
-  padding: 0.6rem 0;
+  padding: 1.8rem 0;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -489,16 +489,24 @@ textarea {
   right: 0;
   top: auto;
   background-color: #ffffff;
-  z-index: 9; }
+  z-index: 9;
+  /* 991 px*/ }
+  @media (max-width: 992px) {
+    .floating-bottom-bar {
+      padding: 1rem 0; } }
   .floating-bottom-bar .inner-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    /* 767 px*/ }
-    @media (max-width: 768px) {
+    /* 991 px*/ }
+    @media (max-width: 992px) {
       .floating-bottom-bar .inner-content {
-        flex-direction: column;
-        align-items: flex-start; } }
+        justify-content: center; }
+        .floating-bottom-bar .inner-content .actions {
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: space-between; } }
     .floating-bottom-bar .inner-content p {
       font-family: "Montserrat Medium", sans-serif;
       flex: 0 0 calc(100% - 31rem); }
